@@ -1,0 +1,68 @@
+.p-auto {
+  padding: auto;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p__tag {
+  padding: 3px 10px;
+  background-color: navajowhite;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.bg-blue {
+  background-color: skyblue;
+}
+
+.bg-coral {
+  background-color: coral;
+}
+
+.bg-hotpink {
+  background-color: hotpink;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.active {
+  background-color: rgb(150, 75, 48);
+}
