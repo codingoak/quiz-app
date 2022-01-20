@@ -11,11 +11,15 @@
     <header class="app-grid__header p-auto bg-hotpink">QUIZ-APP</header>
     <main class="app-grid__scrollarea bg-blue">
       <article class="card position-relative p-20 m-20">
-        <img
-          src="./images/bookmark.png"
-          alt="bookmark"
-          class="position-absolute bookmark"
-        />
+        <button class="position-absolute bookmark">
+          <img
+            src="../../images/bookmark-empty.svg"
+            alt="bookmark"
+            width="28"
+            height="28"
+          />
+        </button>
+
         <h2>QUESTION:</h2>
         <p class="ml-20">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
@@ -23,25 +27,32 @@
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <button class="flex m-auto">SHOW ANSWER</button><br />
+
+        <details class="m-20">
+          <summary></summary>
+          <p>Thie is the right answer.</p>
+        </details>
+
         <ul role="list" class="flex justify-evenly">
-          <li class="p__tag">Tag1</li>
-          <li class="p__tag">Tag2</li>
-          <li class="p__tag">Tag3</li>
-          <li class="p__tag">Tag4</li>
+          <li class="p__tag m-auto">HTML5</li>
+          <li class="p__tag m-auto">CSS3</li>
+          <li class="p__tag m-auto">Git</li>
+          <li class="p__tag m-auto">Advanced</li>
         </ul>
       </article>
     </main>
     <nav class="app-grid__nav bg-coral">
       <a href="index.html" class="active"
-        ><img src="./images/home.png" alt="home"
+        ><img src="./images/house-fill.svg" alt="home"
       /></a>
       <a href="bookmarks.html"
-        ><img src="./images/bookmark.png" alt="bookmarks"
+        ><img src="./images/bookmarks.svg" alt="bookmarks"
       /></a>
-      <a href="create.html"><img src="./images/create.png" alt="create" /></a>
+      <a href="create.html"
+        ><img src="./images/pencil-fill.svg" alt="create"
+      /></a>
       <a href="profile.html"
-        ><img src="./images/profile.png" alt="profile"
+        ><img src="./images/person-fill.svg" alt="profile"
       /></a>
     </nav>
   </body>

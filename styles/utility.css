@@ -7,7 +7,7 @@
 }
 
 .p__tag {
-  padding: 3px 10px;
+  padding: 5px 10px;
   background-color: navajowhite;
 }
 
@@ -36,11 +36,11 @@
 }
 
 .bg-blue {
-  background-color: skyblue;
+  background-color: var(--color-blue);
 }
 
 .bg-coral {
-  background-color: coral;
+  background-color: var(--color-orange);
 }
 
 .bg-hotpink {
@@ -56,16 +56,21 @@
 }
 
 .card {
+  height: auto;
   border: 1px solid black;
+  display: grid;
+  grid-template-rows: 45px 1fr 1fr 55px;
 }
 
 .active {
-  background-color: rgb(150, 75, 48);
+  opacity: 0.5;
 }
 
 .bookmark {
-  top: -15px;
-  right: 10px;
+  top: -10px;
+  right: 14px;
+  border: none;
+  background-color: var(--color-blue);
 }
 
 .position-relative {
