@@ -1,7 +1,7 @@
 import html from "./card.html";
 
 export default {
-  title: "Components/app-grid",
+  title: "Components/card",
 };
 
 export const Default = () => html;
