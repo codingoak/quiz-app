@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -16,11 +18,43 @@ li {
   border: 1px solid black;
 }
 
-nav > img:not(:last-of-type) {
+nav > a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav > a:not(:last-child) {
   border-right: 1px solid black;
 }
 
-img {
-  width: 44px;
-  height: 44px;
+nav > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+details {
+  cursor: pointer;
+  text-align: center;
+}
+
+details > p {
+  position: relative;
+  font-style: italic;
+}
+
+summary {
+  list-style: none;
+  font-weight: bold;
+}
+
+summary::before {
+  content: "SHOW ANSWER";
+}
+
+details[open] summary::before {
+  content: "HIDE ANSWER";
 }

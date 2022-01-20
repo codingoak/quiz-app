@@ -4,7 +4,7 @@
 }
 
 .app-grid__header {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .app-grid__scrollarea {
@@ -15,5 +15,5 @@
   display: grid;
   grid-template-columns: repeat(4, 25%);
   text-align: center;
-  border: 1px solid black;
+  border-top: 1px solid black;
 }
