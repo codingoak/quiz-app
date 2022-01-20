@@ -59,10 +59,19 @@
   border: 1px solid black;
 }
 
-.align-right {
-  text-align: right;
-}
-
 .active {
   background-color: rgb(150, 75, 48);
+}
+
+.bookmark {
+  top: -15px;
+  right: 10px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
