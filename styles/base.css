@@ -1,7 +1,26 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body {
-  background-color: pink;
+header {
+  text-align: center;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+li {
+  border: 1px solid black;
+}
+
+nav > img:not(:last-of-type) {
+  border-right: 1px solid black;
+}
+
+img {
+  width: 44px;
+  height: 44px;
 }

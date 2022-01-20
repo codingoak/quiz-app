@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body class="app-grid h-500">
+    <header class="p-auto bg-hotpink">CREATE</header>
+    <main class="app-grid__scrollarea bg-blue">
+      <div class="h-100vh">
+        <form>
+          <fieldset>
+            <legend>Add a question</legend>
+            <label for="add-question" aria-label="add-question"></label>
+            <textarea
+              name="add-question"
+              id="add-question"
+              cols="30"
+              rows="10"
+              placeholder="Enter your question..."
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Add an answer</legend>
+            <label for="add-answer" aria-label="add-answer"></label>
+            <textarea
+              name="add-answer"
+              id="add-answer"
+              cols="30"
+              rows="10"
+              placeholder="Enter your answer..."
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Add tags</legend>
+            <label for="add-tags" aria-label="add-tags"></label>
+            <textarea
+              name="add-tags"
+              id="add-tags"
+              cols="30"
+              rows="5"
+              placeholder="Enter your tags divided by comma..."
+            ></textarea>
+          </fieldset>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+    <nav class="app-grid__nav bg-coral">
+      <a href="index.html"><img src="./images/home.png" alt="home" /></a>
+      <a href="bookmarks.html"
+        ><img src="./images/bookmark.png" alt="bookmarks"
+      /></a>
+      <a href="create.html" class="active"
+        ><img src="./images/create.png" alt="create"
+      /></a>
+      <a href="profile.html"
+        ><img src="./images/profile.png" alt="profile"
+      /></a>
+    </nav>
+  </body>
+</html>
