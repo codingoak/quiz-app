@@ -37,7 +37,7 @@ button {
 }
 
 details {
-  cursor: pointer;
+  xcursor: pointer;
   text-align: center;
 }
 
@@ -47,6 +47,7 @@ details > p {
 }
 
 summary {
+  cursor: pointer;
   list-style: none;
   font-weight: bold;
 }
