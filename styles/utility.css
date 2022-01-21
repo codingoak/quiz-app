@@ -1,9 +1,5 @@
-.p-auto {
-  padding: auto;
-}
-
-.p-20 {
-  padding: 20px;
+.p-10 {
+  padding: 10px;
 }
 
 .p__tag {
@@ -51,26 +47,20 @@
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
 
-.card {
-  height: auto;
-  border: 1px solid black;
-  display: grid;
-  grid-template-rows: 45px 1fr 1fr 55px;
-}
-
 .active {
   opacity: 0.5;
-}
-
-.bookmark {
-  top: -10px;
-  right: 14px;
-  border: none;
-  background-color: var(--color-blue);
 }
 
 .position-relative {
@@ -79,4 +69,18 @@
 
 .position-absolute {
   position: absolute;
+}
+
+/* card */
+
+.card {
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.bookmark {
+  top: -10px;
+  right: 14px;
+  border: none;
+  background-color: var(--color-blue);
 }

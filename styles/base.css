@@ -4,10 +4,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
 
 ul[role="list"] {
@@ -18,26 +25,13 @@ li {
   border: 1px solid black;
 }
 
-nav > a {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-nav > a:not(:last-child) {
-  border-right: 1px solid black;
-}
-
-nav > a > img {
-  width: 30px;
-  height: 30px;
-}
-
 button {
   cursor: pointer;
 }
 
+/* answer field */
+
 details {
-  xcursor: pointer;
   text-align: center;
 }
 
@@ -58,4 +52,20 @@ summary::before {
 
 details[open] summary::before {
   content: "HIDE ANSWER";
+}
+
+/* nav */
+
+nav > a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav > a:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+nav > a > img {
+  width: 30px;
+  height: 30px;
 }
