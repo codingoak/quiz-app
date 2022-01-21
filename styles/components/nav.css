@@ -1,0 +1,21 @@
+.grid__nav {
+  background-color: rgb(64, 192, 224);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  border-top: 1px solid black;
+}
+
+.nav__a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > a:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.nav__img {
+  width: 30px;
+  height: 30px;
+}
