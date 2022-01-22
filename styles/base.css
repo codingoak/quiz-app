@@ -7,6 +7,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-color: var(--color-dark);
+}
+
 header {
   text-align: center;
   font-weight: bold;

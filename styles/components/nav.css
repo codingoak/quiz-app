@@ -1,5 +1,4 @@
 .nav__grid {
-  background-color: rgb(64, 192, 224);
   display: grid;
   grid-template-columns: repeat(4, 25%);
   border-top: 1px solid black;

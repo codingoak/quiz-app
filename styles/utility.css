@@ -31,16 +31,20 @@
   height: 100vh;
 }
 
-.bg-blue {
-  background-color: var(--color-blue);
+.bg-header {
+  background-color: var(--color-header);
 }
 
-.bg-coral {
-  background-color: var(--color-orange);
+.bg-main {
+  background-color: var(--color-main);
 }
 
-.bg-hotpink {
-  background-color: hotpink;
+.bg-card {
+  background-color: var(--color-card);
+}
+
+.bg-navbar {
+  background-color: var(--color-navbar);
 }
 
 .flex {
