@@ -53,19 +53,3 @@ summary::before {
 details[open] summary::before {
   content: "HIDE ANSWER";
 }
-
-/* nav */
-
-nav > a {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-nav > a:not(:last-child) {
-  border-right: 1px solid black;
-}
-
-nav > a > img {
-  width: 30px;
-  height: 30px;
-}
