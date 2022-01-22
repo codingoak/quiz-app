@@ -1,14 +1,14 @@
-.grid__nav {
+.nav__grid {
   background-color: rgb(64, 192, 224);
   display: grid;
   grid-template-columns: repeat(4, 25%);
   border-top: 1px solid black;
+  height: 48px;
 }
 
 .nav__a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 nav > a:not(:last-child) {
