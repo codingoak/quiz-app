@@ -11,9 +11,13 @@
   place-items: center;
 }
 
-nav > a:not(:last-child) {
+.nav__border-right {
   border-right: 1px solid black;
 }
+
+/* nav > a:not(:last-child) {
+  border-right: 1px solid black;
+} */
 
 .nav__img {
   width: 30px;
