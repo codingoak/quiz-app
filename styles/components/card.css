@@ -1,0 +1,17 @@
+.card {
+  padding: 30px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -20px;
+  right: 14px;
+  border: none;
+  background-color: var(--color-blue);
+}
+
+.card__bg {
+  background-color: var(--color-card);
+}

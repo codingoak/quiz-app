@@ -57,3 +57,7 @@ summary::before {
 details[open] summary::before {
   content: "HIDE ANSWER";
 }
+
+textarea {
+  background-color: var(--color-card);
+}
