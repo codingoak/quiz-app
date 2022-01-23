@@ -9,24 +9,30 @@
   </head>
   <body class="app-grid h-100vh">
     <header class="p-auto bg-header">PROFILE</header>
-    <main class="app-grid__scrollarea bg-main">
-      <img src="#" alt="profile-foto" />
-      <h2>Firstname Lastname</h2>
-      <h3>About me:</h3>
-      <p>
+    <main class="app-grid__scrollarea bg-main profile">
+      <img
+        src="https://source.unsplash.com/random/200x200/?person"
+        alt="profile-foto"
+        width="200"
+        height="200"
+        class="profile__img"
+      />
+      <h1 class="mb-10">Hans Muster</h1>
+      <h3 class="profile__text">About me:</h3>
+      <p class="profile__text mb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, labore
         laborum dolor modi veniam dolorem, accusamus temporibus rerum quisquam
         facere voluptatum nisi, officiis officia provident molestiae quaerat.
         Inventore, placeat iusto?
       </p>
       <h2>Skills</h2>
-      <ul role="list" class="flex justify-evenly">
+      <ul role="list" class="flex justify-evenly gap-5">
         <li class="p__tag">Tag1</li>
         <li class="p__tag">Tag2</li>
         <li class="p__tag">Tag3</li>
         <li class="p__tag">Tag4</li>
       </ul>
-      <button>LOGOUT</button>
+      <button class="profile__button">LOGOUT</button>
     </main>
     <nav class="nav__grid bg-navbar">
       <a href="./index.html" class="nav__a"
