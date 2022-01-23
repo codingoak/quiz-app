@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body class="app-grid h-100vh">
-    <header class="p-auto bg-header">CREATE</header>
-    <main class="app-grid__scrollarea bg-main">
-      <form>
+    <header class="app-grid__header p-10 bg-header">CREATE</header>
+    <main class="app-grid__scrollarea p-30 bg-main">
+      <form class="create">
         <section>
-          <h2>Add a question</h2>
+          <h2 class="create__headings">Add a question</h2>
           <textarea
             name="add-question"
             id="add-question"
@@ -23,7 +23,7 @@
           ></textarea>
         </section>
         <section>
-          <h2>Add an answer</h2>
+          <h2 class="create__headings">Add an answer</h2>
           <textarea
             name="add-answer"
             id="add-answer"
@@ -34,7 +34,7 @@
           ></textarea>
         </section>
         <section>
-          <h2>Add tags</h2>
+          <h2 class="create__headings">Add tags</h2>
           <textarea
             name="add-tags"
             id="add-tags"
@@ -48,13 +48,13 @@
       </form>
     </main>
     <nav class="nav__grid bg-navbar">
-      <a href="./index.html" class="nav__a"
+      <a href="./index.html" class="nav__a active nav__border-right"
         ><img src="./images/house-fill.svg" alt="home" class="nav__img"
       /></a>
-      <a href="../../bookmarks.html" class="nav__a"
+      <a href="../../bookmarks.html" class="nav__a nav__border-right"
         ><img src="./images/bookmarks.svg" alt="bookmarks" class="nav__img"
       /></a>
-      <a href="./create.html" class="nav__a active"
+      <a href="./create.html" class="nav__a nav__border-right"
         ><img src="./images/pencil-fill.svg" alt="create" class="nav__img"
       /></a>
       <a href="./profile.html" class="nav__a"

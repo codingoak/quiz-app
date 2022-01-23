@@ -17,8 +17,13 @@ header {
   font-size: 20px;
 }
 
+h1 {
+  font-size: larger;
+}
+
 h2 {
   margin-bottom: 10px;
+  font-size: medium;
 }
 
 ul[role="list"] {
@@ -31,6 +36,12 @@ li {
 
 button {
   cursor: pointer;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+section {
+  display: inherit;
 }
 
 /* answer field */

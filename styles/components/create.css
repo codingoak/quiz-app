@@ -1,0 +1,7 @@
+.create {
+  display: grid;
+}
+
+.create__headings {
+  margin-top: 20px;
+}

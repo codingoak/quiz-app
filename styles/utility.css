@@ -2,6 +2,10 @@
   padding: 10px;
 }
 
+.p-30 {
+  padding: 30px;
+}
+
 .p__tag {
   padding: 5px 10px;
   background-color: navajowhite;
