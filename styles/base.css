@@ -35,3 +35,7 @@ li {
 section {
   display: inherit;
 }
+
+textarea {
+  background-color: var(--color-card);
+}
