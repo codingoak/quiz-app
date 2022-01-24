@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body class="app-grid h-100vh">
-    <header class="p-auto bg-hotpink">PROFILE</header>
-    <main class="app-grid__scrollarea bg-blue">
-      <img src="#" alt="profile-foto" />
-      <h2>Firstname Lastname</h2>
-      <h3>About me:</h3>
-      <p>
+    <header class="app-grid__header p-10 bg-header">PROFILE</header>
+    <main class="app-grid__scrollarea bg-main profile">
+      <img
+        src="https://source.unsplash.com/random/200x200/?person"
+        alt="profile-foto"
+        width="100"
+        height="100"
+        class="profile__img"
+      />
+      <h1 class="mb-10">Hans Muster</h1>
+      <h2>About me:</h2>
+      <p class="profile__text mb-20">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, labore
         laborum dolor modi veniam dolorem, accusamus temporibus rerum quisquam
         facere voluptatum nisi, officiis officia provident molestiae quaerat.
         Inventore, placeat iusto?
       </p>
       <h2>Skills</h2>
-      <ul role="list" class="flex justify-evenly">
+      <ul role="list" class="flex justify-evenly gap-5">
         <li class="p__tag">Tag1</li>
         <li class="p__tag">Tag2</li>
         <li class="p__tag">Tag3</li>
@@ -28,17 +34,17 @@
       </ul>
       <button>LOGOUT</button>
     </main>
-    <nav class="nav__grid">
-      <a href="./index.html" class="nav__a"
+    <nav class="nav__grid bg-navbar">
+      <a href="./index.html" class="nav__a active nav__border-right"
         ><img src="./images/house-fill.svg" alt="home" class="nav__img"
       /></a>
-      <a href="../../bookmarks.html" class="nav__a"
+      <a href="../../bookmarks.html" class="nav__a nav__border-right"
         ><img src="./images/bookmarks.svg" alt="bookmarks" class="nav__img"
       /></a>
-      <a href="./create.html" class="nav__a"
+      <a href="./create.html" class="nav__a nav__border-right"
         ><img src="./images/pencil-fill.svg" alt="create" class="nav__img"
       /></a>
-      <a href="./profile.html" class="nav__a active"
+      <a href="./profile.html" class="nav__a"
         ><img src="./images/person-fill.svg" alt="profile" class="nav__img"
       /></a>
     </nav>

@@ -2,6 +2,10 @@
   padding: 10px;
 }
 
+.p-30 {
+  padding: 30px;
+}
+
 .p__tag {
   padding: 5px 10px;
   background-color: navajowhite;
@@ -15,6 +19,9 @@
   margin: 20px;
 }
 
+.mb-10 {
+  margin: 10px;
+}
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -31,16 +38,20 @@
   height: 100vh;
 }
 
-.bg-blue {
-  background-color: var(--color-blue);
+.bg-header {
+  background-color: var(--color-header);
 }
 
-.bg-coral {
-  background-color: var(--color-orange);
+.bg-main {
+  background-color: var(--color-main);
 }
 
-.bg-hotpink {
-  background-color: hotpink;
+.bg-card {
+  background-color: var(--color-card);
+}
+
+.bg-navbar {
+  background-color: var(--color-navbar);
 }
 
 .flex {

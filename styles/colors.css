@@ -1,13 +1,7 @@
 :root {
-  --color-whitish: rgb(245, 252, 252);
-  --color-blue-light: rgb(207, 236, 255);
-  --color-blue-light-trans: rgba(207, 236, 255, 0.7);
-  --color-blue: rgb(127, 203, 253);
-  --color-blue-dark-trans: rgba(28, 87, 126, 0.7);
-  --color-yellow: #f1ff5c;
-  --color-orange: #ffa260;
-  --color-red-trans: rgba(182, 0, 0, 0.8);
-  --color-gray-trans: rgba(28, 87, 126, 20%);
-  --color-dark: #081c24;
-  --color-dark-trans: rgba(8, 28, 36, 0.4);
+  --color-header: #a5a58d;
+  --color-main: #fff1e6;
+  --color-navbar: #a5a58d;
+  --color-card: #f0efeb;
+  --color-dark: #001219;
 }
