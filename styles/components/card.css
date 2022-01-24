@@ -20,10 +20,6 @@
   background-color: transparent;
 }
 
-.card__bookmark--empty {
-  fill: var(--color-card);
-}
-
 .card__bookmark--filled {
   fill: var(--color-dark);
 }
