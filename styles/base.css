@@ -32,12 +32,6 @@ li {
   border: 1px solid black;
 }
 
-button {
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 5px 10px;
-}
-
 section {
   display: inherit;
 }

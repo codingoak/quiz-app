@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.card__bg {
+  background-color: var(--color-card);
+}
+
 .card__bookmark {
   padding: 0;
   margin: 0;
@@ -11,9 +15,13 @@
   top: -10px;
   right: 14px;
   border: none;
-  background-color: var(--color-blue);
+  background-color: transparent;
 }
 
-.card__bg {
-  background-color: var(--color-card);
+.card__bookmark--empty {
+  fill: var(--color-card);
+}
+
+.card__bookmark--filled {
+  fill: var(--color-dark);
 }
