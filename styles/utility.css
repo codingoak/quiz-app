@@ -5,6 +5,7 @@
 .p__tag {
   padding: 5px 10px;
   background-color: navajowhite;
+  font-size: small;
 }
 
 .m-auto {
@@ -16,7 +17,7 @@
 }
 
 .mb-10 {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .mb-20 {
@@ -41,10 +42,6 @@
 
 .bg-main {
   background-color: var(--color-main);
-}
-
-.bg-card {
-  background-color: var(--color-card);
 }
 
 .bg-navbar {
@@ -77,4 +74,14 @@
 
 .position-absolute {
   position: absolute;
+}
+
+.button {
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 2rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  background-color: #0d3b66;
+  color: #faf0ca;
 }

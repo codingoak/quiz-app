@@ -2,6 +2,12 @@
   padding: 30px;
   border: 1px solid black;
   position: relative;
+  display: grid;
+  gap: 10px;
+}
+
+.card__bg {
+  background-color: var(--color-card);
 }
 
 .card__bookmark {
@@ -11,9 +17,13 @@
   top: -10px;
   right: 14px;
   border: none;
-  background-color: var(--color-blue);
+  background-color: transparent;
 }
 
-.card__bg {
-  background-color: var(--color-card);
+.card__bookmark--filled {
+  fill: var(--color-dark);
+}
+
+.card__hide {
+  display: none;
 }

@@ -32,39 +32,8 @@ li {
   border: 1px solid black;
 }
 
-button {
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 5px 10px;
-}
-
 section {
   display: inherit;
-}
-
-/* answer field */
-
-details {
-  text-align: center;
-}
-
-details > p {
-  position: relative;
-  font-style: italic;
-}
-
-summary {
-  cursor: pointer;
-  list-style: none;
-  font-weight: bold;
-}
-
-summary::before {
-  content: "SHOW ANSWER";
-}
-
-details[open] summary::before {
-  content: "HIDE ANSWER";
 }
 
 textarea {
