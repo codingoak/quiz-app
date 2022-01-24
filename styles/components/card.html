@@ -1,21 +1,20 @@
 <main class="app-grid__scrollarea">
-  <article class="card position-relative m-20 bg-card">
-    <button class="position-absolute card__bookmark bg-card">
+  <article class="card position-relative m-20 card__bg">
+    <button data-js="btnBookmark" class="position-absolute card__bookmark">
       <svg
+        data-js="imgBookmark"
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
-        fill="var(--color-card)"
         stroke="var(--color-dark)"
-        class="bi bi-bookmark-fill"
         viewBox="0 0 16 16"
+        class="card__bookmark--empty"
       >
         <path
           d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
         />
       </svg>
     </button>
-
     <h2>QUESTION:</h2>
     <p class="ml-20">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit unde
@@ -23,7 +22,6 @@
       iste sit quam ullam! Commodi repellendus accusamus sit dolorem labore
       magnam.
     </p>
-
     <details class="m-20">
       <summary></summary>
       <p>
@@ -31,7 +29,6 @@
         adipisicing elit.
       </p>
     </details>
-
     <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
       <li class="p__tag m-auto">HTML5</li>
       <li class="p__tag m-auto">CSS3</li>
