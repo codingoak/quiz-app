@@ -1,15 +1,13 @@
 .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  display: grid;
+  gap: 20px;
 }
 
 .profile__img {
   border-radius: 50%;
 }
 
-.profile__text {
+.profile__centered {
   display: inherit;
   place-items: center;
 }

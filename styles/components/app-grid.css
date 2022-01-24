@@ -9,4 +9,5 @@
 
 .app-grid__scrollarea {
   overflow-y: auto;
+  padding: 20px;
 }
