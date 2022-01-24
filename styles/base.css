@@ -11,14 +11,12 @@ body {
   background-color: var(--color-dark);
 }
 
-header {
+h1 {
+  font-size: larger;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-}
-
-h1 {
-  font-size: larger;
+  padding: 10px;
 }
 
 h2 {
