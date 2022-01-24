@@ -35,32 +35,3 @@ li {
 section {
   display: inherit;
 }
-
-/* answer field */
-
-details {
-  text-align: center;
-}
-
-details > p {
-  position: relative;
-  font-style: italic;
-}
-
-summary {
-  cursor: pointer;
-  list-style: none;
-  font-weight: bold;
-}
-
-summary::before {
-  content: "SHOW ANSWER";
-}
-
-details[open] summary::before {
-  content: "HIDE ANSWER";
-}
-
-textarea {
-  background-color: var(--color-card);
-}

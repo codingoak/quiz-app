@@ -11,7 +11,7 @@
   <body class="app-grid h-100vh">
     <h1 class="app-grid__header bg-header">BOOKMARKS</h1>
     <main class="app-grid__scrollarea bg-main">
-      <article class="card position-relative m-20 card__bg">
+      <article class="card position-relative card__bg">
         <button data-js="btnBookmark" class="position-absolute card__bookmark">
           <svg
             data-js="imgBookmark"
@@ -28,19 +28,20 @@
           </svg>
         </button>
         <h2>QUESTION:</h2>
-        <p class="ml-20">
+        <p class="mb-10">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
           unde vitae numquam distinctio temporibus sapiente eligendi sunt? Sed
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <details class="m-20">
-          <summary></summary>
-          <p>
-            This is the right answer. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.
-          </p>
-        </details>
+        <button data-js="btnAnswer" class="button">
+          <span data-js="txtShow">SHOW ANSWER</span>
+          <span data-js="txtHide" class="card__hide">HIDE ANSWER</span>
+        </button>
+        <p data-js="txtAnswer" class="card__hide mb-20">
+          This is the right answer. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </p>
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
           <li class="p__tag m-auto">HTML5</li>
           <li class="p__tag m-auto">CSS3</li>
