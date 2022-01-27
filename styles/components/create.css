@@ -5,3 +5,7 @@
 .create__headings {
   margin-top: 20px;
 }
+
+.create__inline {
+  display: inline;
+}
