@@ -13,10 +13,9 @@ const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 const txtAnswer = document.querySelector('[data-js="txtAnswer"]');
 
 btnAnswer?.addEventListener('click', () => {
-  btnAnswer.textContent =
-    btnAnswer.textContent === 'SHOW ANSWER'
-      ? (btnAnswer.textContent = 'HIDE ANSWER')
-      : (btnAnswer.textContent = 'SHOW ANSWER');
+  btnAnswer.textContent === 'SHOW ANSWER'
+    ? (btnAnswer.textContent = 'HIDE ANSWER')
+    : (btnAnswer.textContent = 'SHOW ANSWER');
   txtAnswer.classList.toggle('card__hide');
 });
 
