@@ -19,15 +19,3 @@ btnAnswer?.addEventListener('click', () => {
     btnAnswer.textContent === textShow ? textHide : textShow;
   txtAnswer.classList.toggle('card__hide');
 });
-
-// Counter textarea
-
-const txtQuestion = document.querySelector('[data-js="txtQuestion"]');
-const counterQuestion = document.querySelector('[data-js="counterQuestion"]');
-
-console.clear();
-let counter = 0;
-
-document.body.addEventListener('keydown', () => {
-  console.log('aha');
-});
