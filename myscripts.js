@@ -1,11 +1,9 @@
-console.clear();
-
 // Bookmark Button
 
 const btnBookmark = document.querySelector('[data-js="btnBookmark"]');
 const imgBookmark = document.querySelector('[data-js="imgBookmark"]');
 
-btnBookmark.addEventListener('click', () => {
+btnBookmark?.addEventListener('click', () => {
   imgBookmark.classList.toggle('card__bookmark--filled');
 });
 
@@ -13,6 +11,8 @@ btnBookmark.addEventListener('click', () => {
 
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 const txtAnswer = document.querySelector('[data-js="txtAnswer"]');
+const textShow = 'SHOW ANSWER';
+const textHide = 'HIDE ANSWER';
 
 btnAnswer?.addEventListener('click', () => {
   btnAnswer.textContent =
@@ -20,7 +20,7 @@ btnAnswer?.addEventListener('click', () => {
   txtAnswer.classList.toggle('card__hide');
 });
 
-// Navbar
+// Navbar -in progress
 
 const btnHome = document.querySelector('[data-js="home"]');
 const btnBookmarks = document.querySelector('[data-js="bookmarks"]');
