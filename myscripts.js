@@ -19,3 +19,23 @@ btnAnswer?.addEventListener('click', () => {
     btnAnswer.textContent === textShow ? textHide : textShow;
   txtAnswer.classList.toggle('card__hide');
 });
+
+// Navbar
+
+const home = document.querySelector('[data-js="home"]');
+const bookmarks = document.querySelector('[data-js="bookmarks"]');
+const create = document.querySelector('[data-js="create"]');
+const create = document.querySelector('[data-js="create"]');
+
+const btnHome = document.querySelector('[data-js="btnHome"]');
+const btnBookmarks = document.querySelector('[data-js="btnBookmarks"]');
+const btnCreate = document.querySelector('[data-js="btnCreate"]');
+const btnProfile = document.querySelector('[data-js="btnProfile"]');
+
+btnHome.addEventListener('click', () => {});
+
+btnBookmarks.addEventListener('click', () => {});
+
+btnCreate.addEventListener('click', () => {});
+
+btnProfile.addEventListener('click', () => {});

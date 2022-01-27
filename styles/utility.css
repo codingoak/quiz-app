@@ -48,10 +48,6 @@
   background-color: var(--color-main);
 }
 
-.bg-navbar {
-  background-color: var(--color-navbar);
-}
-
 .flex {
   display: flex;
 }
@@ -70,6 +66,10 @@
 
 .active {
   opacity: 0.5;
+}
+
+.hidden {
+  display: none;
 }
 
 .position-relative {
