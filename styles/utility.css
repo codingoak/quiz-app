@@ -48,10 +48,6 @@
   background-color: var(--color-main);
 }
 
-.bg-navbar {
-  background-color: var(--color-navbar);
-}
-
 .flex {
   display: flex;
 }
@@ -66,10 +62,6 @@
 
 .justify-evenly {
   justify-content: space-evenly;
-}
-
-.active {
-  opacity: 0.5;
 }
 
 .position-relative {

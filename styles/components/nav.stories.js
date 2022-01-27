@@ -1,7 +1,7 @@
-import html from "./nav.html";
+import html from './nav.html';
 
 export default {
-  title: "Components/nav",
+  title: 'Components/nav',
 };
 
 export const Default = () => html;
