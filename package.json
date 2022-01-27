@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run htmlhint && npm run prettier:write",
+    "test": "npm run htmlhint && npm run prettier:check",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint '**/*.html'",

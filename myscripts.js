@@ -28,33 +28,37 @@ const btnCreate = document.querySelector('[data-js="create"]');
 const btnProfile = document.querySelector('[data-js="profile"]');
 
 btnHome.addEventListener('click', () => {
-  console.log('home clicked');
-  btnHome.classList.add('nav__active');
-  btnBookmarks.classList.remove('nav__active');
-  btnCreate.classList.remove('nav__active');
-  btnProfile.classList.remove('nav__active');
+  setActiveClass(btnHome);
+  removeActiveClass(btnBookmarks);
+  removeActiveClass(btnCreate);
+  removeActiveClass(btnProfile);
 });
 
 btnBookmarks.addEventListener('click', () => {
-  console.log('bookmarks clicked');
-  btnBookmarks.classList.add('nav__active');
-  btnHome.classList.remove('nav__active');
-  btnCreate.classList.remove('nav__active');
-  btnProfile.classList.remove('nav__active');
+  setActiveClass(btnBookmarks);
+  removeActiveClass(btnHome);
+  removeActiveClass(btnCreate);
+  removeActiveClass(btnProfile);
 });
 
 btnCreate.addEventListener('click', () => {
-  console.log('create clicked');
-  btnCreate.classList.add('nav__active');
-  btnHome.classList.remove('nav__active');
-  btnBookmarks.classList.remove('nav__active');
-  btnProfile.classList.remove('nav__active');
+  setActiveClass(btnCreate);
+  removeActiveClass(btnHome);
+  removeActiveClass(btnBookmarks);
+  removeActiveClass(btnProfile);
 });
 
 btnProfile.addEventListener('click', () => {
-  console.log('profile clicked');
-  btnProfile.classList.add('nav__active');
-  btnHome.classList.remove('nav__active');
-  btnBookmarks.classList.remove('nav__active');
-  btnCreate.classList.remove('nav__active');
+  setActiveClass(btnProfile);
+  removeActiveClass(btnHome);
+  removeActiveClass(btnBookmarks);
+  removeActiveClass(btnCreate);
 });
+
+function removeActiveClass(dataSelector) {
+  dataSelector.classList.remove('nav__active');
+}
+
+function setActiveClass(dataSelector) {
+  dataSelector.classList.add('nav__active');
+}
