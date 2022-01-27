@@ -24,7 +24,7 @@ h2 {
   font-size: medium;
 }
 
-ul[role="list"] {
+ul[role='list'] {
   list-style: none;
 }
 
