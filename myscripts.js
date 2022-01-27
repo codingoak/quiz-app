@@ -3,7 +3,7 @@
 const btnBookmark = document.querySelector('[data-js="btnBookmark"]');
 const imgBookmark = document.querySelector('[data-js="imgBookmark"]');
 
-btnBookmark.addEventListener('click', (e) => {
+btnBookmark?.addEventListener('click', (e) => {
   imgBookmark.classList.toggle('card__bookmark--filled');
   console.log(e);
 });
@@ -13,7 +13,7 @@ btnBookmark.addEventListener('click', (e) => {
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 const txtAnswer = document.querySelector('[data-js="txtAnswer"]');
 
-btnAnswer.addEventListener('click', () => {
+btnAnswer?.addEventListener('click', () => {
   if (btnAnswer.textContent === 'SHOW ANSWER') {
     btnAnswer.textContent = 'HIDE ANSWER';
   } else {
