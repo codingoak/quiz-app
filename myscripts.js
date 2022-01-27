@@ -11,11 +11,12 @@ btnBookmark?.addEventListener('click', () => {
 
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 const txtAnswer = document.querySelector('[data-js="txtAnswer"]');
+const textShow = 'SHOW ANSWER';
+const textHide = 'HIDE ANSWER';
 
 btnAnswer?.addEventListener('click', () => {
-  btnAnswer.textContent === 'SHOW ANSWER'
-    ? (btnAnswer.textContent = 'HIDE ANSWER')
-    : (btnAnswer.textContent = 'SHOW ANSWER');
+  btnAnswer.textContent =
+    btnAnswer.textContent === textShow ? textHide : textShow;
   txtAnswer.classList.toggle('card__hide');
 });
 
