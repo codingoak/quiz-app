@@ -7,7 +7,7 @@
     "test": "npm run htmlhint && npm run prettier:write",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
-    "hmlhint": "npx htmlhint '**/*.html'",
+    "htmlhint": "npx htmlhint '**/*.html'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install"
