@@ -81,3 +81,7 @@
   background-color: #0d3b66;
   color: #faf0ca;
 }
+
+.hidden {
+  display: none;
+}

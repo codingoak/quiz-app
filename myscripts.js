@@ -22,37 +22,66 @@ btnAnswer?.addEventListener('click', () => {
 
 // Navbar -in progress
 
-const btnHome = document.querySelector('[data-js="home"]');
-const btnBookmarks = document.querySelector('[data-js="bookmarks"]');
-const btnCreate = document.querySelector('[data-js="create"]');
-const btnProfile = document.querySelector('[data-js="profile"]');
+const btnHome = document.querySelector('[data-js="btnHome"]');
+const btnBookmarks = document.querySelector('[data-js="btnBookmarks"]');
+const btnCreate = document.querySelector('[data-js="btnCreate"]');
+const btnProfile = document.querySelector('[data-js="btnProfile"]');
+
+const home = document.querySelector('[data-js="home"]');
+const bookmarks = document.querySelector('[data-js="bookmarks"]');
+const create = document.querySelector('[data-js="create"]');
+const profile = document.querySelector('[data-js="profile"]');
 
 btnHome.addEventListener('click', () => {
+  // Activate navbar icon
   setActiveClass(btnHome);
   removeActiveClass(btnBookmarks);
   removeActiveClass(btnCreate);
   removeActiveClass(btnProfile);
+  // Display active content
+  home.classList.remove('hidden');
+  bookmarks.classList.add('hidden');
+  create.classList.add('hidden');
+  // profile.classList.add('hidden');
 });
 
 btnBookmarks.addEventListener('click', () => {
+  // Activate navbar icon
   setActiveClass(btnBookmarks);
-  removeActiveClass(btnHome);
   removeActiveClass(btnCreate);
   removeActiveClass(btnProfile);
+  removeActiveClass(btnHome);
+  // Display active content
+  bookmarks.classList.remove('hidden');
+  create.classList.add('hidden');
+  profile.classList.add('hidden');
+  home.classList.add('hidden');
 });
 
 btnCreate.addEventListener('click', () => {
+  // Activate navbar icon
   setActiveClass(btnCreate);
   removeActiveClass(btnHome);
   removeActiveClass(btnBookmarks);
   removeActiveClass(btnProfile);
+  // Display active content
+  create.classList.remove('hidden');
+  profile.classList.add('hidden');
+  home.classList.add('hidden');
+  bookmarks.classList.add('hidden');
 });
 
 btnProfile.addEventListener('click', () => {
+  // Activate navbar icon
   setActiveClass(btnProfile);
   removeActiveClass(btnHome);
   removeActiveClass(btnBookmarks);
   removeActiveClass(btnCreate);
+  // Display active content
+  profile.classList.remove('hidden');
+  home.classList.add('hidden');
+  bookmarks.classList.add('hidden');
+  create.classList.add('hidden');
 });
 
 function removeActiveClass(dataSelector) {
