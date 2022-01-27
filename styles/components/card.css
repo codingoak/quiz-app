@@ -1,6 +1,6 @@
 .card {
   padding: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--color-dark);
   position: relative;
   display: grid;
   gap: 10px;
@@ -26,4 +26,11 @@
 
 .card__hide {
   display: none;
+}
+
+.card__tag {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: var(--color-card-tag);
+  font-size: small;
 }

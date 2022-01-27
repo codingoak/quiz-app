@@ -1,4 +1,5 @@
-// ******* Bookmark Button *******
+/******** Bookmark Button ********/
+
 const btnBookmark = document.querySelector('[data-js="btnBookmark"]');
 const imgBookmark = document.querySelector('[data-js="imgBookmark"]');
 
@@ -6,7 +7,7 @@ btnBookmark?.addEventListener('click', () => {
   imgBookmark.classList.toggle('card__bookmark--filled');
 });
 
-// ******* Answer Button *******
+/******** Answer Button ********/
 
 const btnAnswer = document.querySelector('[data-js="btnAnswer"]');
 const txtAnswer = document.querySelector('[data-js="txtAnswer"]');
@@ -19,7 +20,7 @@ btnAnswer?.addEventListener('click', () => {
   txtAnswer.classList.toggle('card__hide');
 });
 
-// ******* Navbar and site enabeling *******
+/******** Navbar icon and page display ********/
 
 // const buttons
 const btnHome = document.querySelector('[data-js="btnHome"]');
@@ -70,3 +71,29 @@ function removeActiveSite(btnSelector, siteSelector) {
   btnSelector.classList.remove('nav__active');
   siteSelector.classList.add('hidden');
 }
+
+/******** Counter textarea ********/
+
+// Question
+const counterOutputQuestion = document.querySelector(
+  '[data-js="counterOutputQuestion"]'
+);
+const textareaQuestion = document.querySelector('[data-js="textareaQuestion"]');
+const counterQuestion = 200;
+
+textareaQuestion.addEventListener('input', () => {
+  const stringLength = textareaQuestion.value.length;
+  counterOutputQuestion.value = counterQuestion - textareaQuestion.value.length;
+});
+
+// Answer
+const counterOutputAnswer = document.querySelector(
+  '[data-js="counterOutputAnswer"]'
+);
+const textareaAnswer = document.querySelector('[data-js="textareaAnswer"]');
+const counterAnswer = 200;
+
+textareaAnswer.addEventListener('input', () => {
+  const stringLength = textareaAnswer.value.length;
+  counterOutputAnswer.value = counterAnswer - textareaAnswer.value.length;
+});

@@ -11,3 +11,10 @@
   display: inherit;
   place-items: center;
 }
+
+.profile__tag {
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: var(--color-card);
+  font-size: small;
+}
