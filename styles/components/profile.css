@@ -15,6 +15,6 @@
 .profile__tag {
   padding: 10px 15px;
   border-radius: 3px;
-  background-color: var(--color-card);
+  background-color: var(--color-card-tag);
   font-size: small;
 }

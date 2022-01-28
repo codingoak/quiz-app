@@ -30,14 +30,6 @@
   height: 100vh;
 }
 
-.bg-header {
-  background-color: var(--color-header);
-}
-
-.bg-main {
-  background-color: var(--color-main);
-}
-
 .flex {
   display: flex;
 }

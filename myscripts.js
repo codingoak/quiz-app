@@ -22,6 +22,9 @@ btnAnswer?.addEventListener('click', () => {
 
 /******** Navbar icon and page display ********/
 
+/******************************************
+ ******** still under construction ********/
+
 // const buttons
 const btnHome = document.querySelector('[data-js="btnHome"]');
 const btnBookmarks = document.querySelector('[data-js="btnBookmarks"]');
@@ -71,6 +74,17 @@ function removeActiveSite(btnSelector, siteSelector) {
   btnSelector.classList.remove('nav__active');
   siteSelector.classList.add('hidden');
 }
+
+// const siteElements = document.querySelectorAll('.js-siteElements');
+// console.log(siteElements);
+
+// for (let i = 0; i < siteElements.length; i++) {
+//   console.log(siteElements[i]);
+//   console.log(siteElements.classList)
+//   if (siteElements.classList.hasOwnProperty('hidden')) {
+//     console.log('it contains hidden')
+//   }
+// }
 
 /******** Counter textarea ********/
 

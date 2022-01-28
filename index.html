@@ -9,8 +9,8 @@
     <script defer src="myscripts.js"></script>
   </head>
   <body class="app-grid h-100vh">
-    <h1 class="app-grid__header bg-header">QUIZ-APP</h1>
-    <main data-js="home" class="app-grid__scrollarea bg-main">
+    <h1 class="app-grid__header">QUIZ-APP</h1>
+    <main data-js="home" class="js-siteElements app-grid__scrollare">
       <article class="card position-relative card__bg mb-20">
         <button data-js="btnBookmark" class="position-absolute card__bookmark">
           <svg
@@ -82,7 +82,10 @@
         </ul>
       </article>
     </main>
-    <main data-js="bookmarks" class="app-grid__scrollarea bg-main hidden">
+    <main
+      data-js="bookmarks"
+      class="js-siteElements app-grid__scrollarea hidden"
+    >
       <article class="card position-relative card__bg mb-20">
         <button data-js="btnBookmark" class="position-absolute card__bookmark">
           <svg
@@ -119,7 +122,7 @@
         </ul>
       </article>
     </main>
-    <main data-js="create" class="app-grid__scrollarea bg-main hidden">
+    <main data-js="create" class="js-siteElements app-grid__scrollarea hidden">
       <form class="create">
         <section>
           <label for="add-question" class="create__headings"
@@ -167,7 +170,10 @@
         <button class="button">SUBMIT</button>
       </form>
     </main>
-    <main data-js="profile" class="app-grid__scrollarea bg-main profile hidden">
+    <main
+      data-js="profile"
+      class="js-siteElements app-grid__scrollarea profile hidden"
+    >
       <figure class="profile__centered">
         <img
           src="https://source.unsplash.com/random/200x200/?person"
