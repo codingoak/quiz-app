@@ -7,6 +7,7 @@ export function navbar() {
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfile = document.querySelector('[data-nav="profile"]');
   // const sites
+  const pageStart = document.querySelector('[data-page="start"]');
   const pageHome = document.querySelector('[data-page="home"]');
   const pageBookmarks = document.querySelector('[data-page="bookmarks"]');
   const pageCreate = document.querySelector('[data-page="create"]');
@@ -18,6 +19,7 @@ export function navbar() {
     removeActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonCreate, pageCreate);
     removeActiveSite(buttonProfile, pageProfile);
+
     heading.innerHTML = 'QUIZ-APP | Home';
   });
 
@@ -56,5 +58,7 @@ export function navbar() {
   function removeActiveSite(buttonSelector, siteSelector) {
     buttonSelector.classList.remove('nav__active');
     siteSelector.classList.add('hidden');
+
+    pageStart.classList.add('hidden');
   }
 }

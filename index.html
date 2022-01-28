@@ -10,7 +10,8 @@
   </head>
   <body class="app-grid h-100vh">
     <h1 data-js="headingMain" class="app-grid__header">WELCOME TO QUIZ-APP</h1>
-    <main data-page="home" class="app-grid__scrollarea">
+    <main data-page="start" class="app-grid__scrollarea"></main>
+    <main data-page="home" class="hidden app-grid__scrollarea">
       <article data-js="card" class="card position-relative card__bg mb-20">
         <button
           data-js="buttonBookmark"
@@ -140,7 +141,7 @@
             required
           ></textarea>
         </section>
-        <button class="button">SUBMIT</button>
+        <button class="button mt-10">SUBMIT</button>
       </form>
     </main>
     <main data-page="profile" class="hidden app-grid__scrollarea">
@@ -173,11 +174,11 @@
             <li class="profile__tag m-auto">Tag4</li>
           </ul>
         </section>
-        <button class="button">LOGOUT</button>
+        <button class="button mt-20">LOGOUT</button>
       </section>
     </main>
     <nav class="nav__grid nav__bg">
-      <button data-nav="home" class="nav__bg nav__button nav__active">
+      <button data-nav="home" class="nav__bg nav__button">
         <img src="./images/house-fill.svg" alt="home" class="nav__img" />
       </button>
       <button data-nav="bookmarks" class="nav__bg nav__button">

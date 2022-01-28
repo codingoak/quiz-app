@@ -7,10 +7,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-  background-color: var(--color-dark);
-}
-
 h1 {
   font-size: larger;
   text-align: center;
