@@ -5,9 +5,15 @@
   height: 48px;
 }
 
-.nav__a {
+.nav__bg {
+  background-color: var(--color-navbar);
+}
+
+.nav__button {
   display: grid;
   place-items: center;
+  border: 0.5px solid var(--color-dark);
+  background-color: var(--color-navbar);
 }
 
 .nav__border-right {
@@ -17,4 +23,8 @@
 .nav__img {
   width: 30px;
   height: 30px;
+}
+
+.nav__active {
+  opacity: 0.5;
 }
