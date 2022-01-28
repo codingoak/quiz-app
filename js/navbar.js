@@ -7,38 +7,38 @@ export function navbar() {
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfile = document.querySelector('[data-nav="profile"]');
   // const sites
-  const home = document.querySelector('[data-page="home"]');
-  const bookmarks = document.querySelector('[data-page="bookmarks"]');
-  const create = document.querySelector('[data-page="create"]');
-  const profile = document.querySelector('[data-page="profile"]');
+  const pageHome = document.querySelector('[data-page="home"]');
+  const pageBookmarks = document.querySelector('[data-page="bookmarks"]');
+  const pageCreate = document.querySelector('[data-page="create"]');
+  const pageProfile = document.querySelector('[data-page="profile"]');
 
   // Activate home icon and show content
   buttonHome.addEventListener('click', () => {
-    setActiveSite(buttonHome, home);
-    removeActiveSite(buttonBookmarks, bookmarks);
-    removeActiveSite(buttonCreate, create);
-    removeActiveSite(buttonProfile, profile);
+    setActiveSite(buttonHome, pageHome);
+    removeActiveSite(buttonBookmarks, pageBookmarks);
+    removeActiveSite(buttonCreate, pageCreate);
+    removeActiveSite(buttonProfile, pageProfile);
   });
   // Activate bookmarks icon and show content
   buttonBookmarks.addEventListener('click', () => {
-    setActiveSite(buttonBookmarks, bookmarks);
-    removeActiveSite(buttonCreate, create);
-    removeActiveSite(buttonProfile, profile);
-    removeActiveSite(buttonHome, home);
+    setActiveSite(buttonBookmarks, pageBookmarks);
+    removeActiveSite(buttonCreate, pageCreate);
+    removeActiveSite(buttonProfile, pageProfile);
+    removeActiveSite(buttonHome, pageHome);
   });
   // Activate create icon and show content
   buttonCreate.addEventListener('click', () => {
-    setActiveSite(buttonCreate, create);
-    removeActiveSite(buttonHome, home);
-    removeActiveSite(buttonBookmarks, bookmarks);
-    removeActiveSite(buttonProfile, profile);
+    setActiveSite(buttonCreate, pageCreate);
+    removeActiveSite(buttonHome, pageHome);
+    removeActiveSite(buttonBookmarks, pageBookmarks);
+    removeActiveSite(buttonProfile, pageProfile);
   });
   // Activate profile icon and show content
   buttonProfile.addEventListener('click', () => {
-    setActiveSite(buttonProfile, profile);
-    removeActiveSite(buttonHome, home);
-    removeActiveSite(buttonBookmarks, bookmarks);
-    removeActiveSite(buttonCreate, create);
+    setActiveSite(buttonProfile, pageProfile);
+    removeActiveSite(buttonHome, pageHome);
+    removeActiveSite(buttonBookmarks, pageBookmarks);
+    removeActiveSite(buttonCreate, pageCreate);
   });
 
   // enable icon and site
