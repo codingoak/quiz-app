@@ -9,8 +9,19 @@
     <script type="module" defer src="index.js"></script>
   </head>
   <body class="app-grid h-100vh">
-    <h1 data-js="headingMain" class="app-grid__header">WELCOME TO QUIZ-APP</h1>
-    <main data-page="start" class="app-grid__scrollarea"></main>
+    <h1 data-js="headingMain" class="app-grid__header"></h1>
+    <!-- ************* WELCOME PAGE ************* -->
+    <main data-page="start" class="app-grid__scrollarea">
+      <h2 class="mt-20">WELCOME TO QUIZ-APP</h2>
+      <figure class="m-20">
+        <q
+          >Live as if you were to die tomorrow. Learn as if you were to live
+          forever.</q
+        >
+        <figcaption class="mt-10">― Mahatma Gandhi</figcaption>
+      </figure>
+    </main>
+    <!-- ************* HOME PAGE ************* -->
     <main data-page="home" class="hidden app-grid__scrollarea">
       <article data-js="card" class="card position-relative card__bg mb-20">
         <button
@@ -89,7 +100,9 @@
         </ul>
       </article>
     </main>
+    <!-- ************* BOOKMARKS PAGE ************* -->
     <main data-page="bookmarks" class="hidden app-grid__scrollarea"></main>
+    <!-- ************* CREATE PAGE ************* -->
     <main data-page="create" class="hidden app-grid__scrollarea">
       <form class="create">
         <section>
@@ -100,16 +113,15 @@
             data-js="textareaQuestion"
             name="add-question"
             id="add-question"
-            cols="10"
-            rows="6"
+            cols="9"
+            rows="7"
             maxlength="200"
             placeholder="Enter your question..."
             required
           ></textarea>
-          <output
-            data-js="counterOutputQuestion"
-            class="create__counter"
-          ></output>
+          <output data-js="counterOutputQuestion" class="create__counter"
+            >200 characters remaining</output
+          >
         </section>
         <section>
           <label for="add-answer" class="create__headings"
@@ -119,31 +131,36 @@
             data-js="textareaAnswer"
             name="add-answer"
             id="add-answer"
-            cols="10"
-            rows="6"
+            cols="9"
+            rows="7"
+            maxlength="200"
             placeholder="Enter your answer..."
             required
           ></textarea>
-          <output
-            data-js="counterOutputAnswer"
-            class="create__counter"
-          ></output>
+          <output data-js="counterOutputAnswer" class="create__counter"
+            >200 characters remaining</output
+          >
         </section>
         <section>
           <label for="add-tags" class="create__headings">Add tags:</label>
           <textarea
-            class="mb-20"
+            data-js="textareaTags"
             name="add-tags"
             id="add-tags"
             cols="5"
             rows="3"
+            maxlength="100"
             placeholder="Enter your tags divided by comma..."
             required
           ></textarea>
+          <output data-js="counterOutputTags" class="create__counter"
+            >100 characters remaining</output
+          >
         </section>
-        <button class="button mt-10">SUBMIT</button>
+        <button class="button mt-20">SUBMIT</button>
       </form>
     </main>
+    <!-- *********** PROFILE PAGE *********** -->
     <main data-page="profile" class="hidden app-grid__scrollarea">
       <section class="profile">
         <figure class="profile__centered">
@@ -177,6 +194,7 @@
         <button class="button mt-20">LOGOUT</button>
       </section>
     </main>
+    <!-- *********** NAVBAR *********** -->
     <nav class="nav__grid nav__bg">
       <button data-nav="home" class="nav__bg nav__button">
         <img src="./images/house-fill.svg" alt="home" class="nav__img" />

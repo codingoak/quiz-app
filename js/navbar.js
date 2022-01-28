@@ -1,5 +1,4 @@
 export function navbar() {
-  /******* still under construction ********/
   const heading = document.querySelector('[data-js="headingMain"]');
   // const buttons
   const buttonHome = document.querySelector('[data-nav="home"]');
