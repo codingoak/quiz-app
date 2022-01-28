@@ -10,9 +10,12 @@
   </head>
   <body class="app-grid h-100vh">
     <h1 class="app-grid__header">QUIZ-APP</h1>
-    <main data-js="home" class="js-siteElements app-grid__scrollarea">
+    <main data-page="home" class="app-grid__scrollarea">
       <article class="card position-relative card__bg mb-20">
-        <button data-js="btnBookmark" class="position-absolute card__bookmark">
+        <button
+          data-js="buttonBookmark"
+          class="position-absolute card__bookmark"
+        >
           <svg
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +37,7 @@
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <button data-js="btnAnswer" class="button">SHOW ANSWER</button>
+        <button data-js="buttonAnswer" class="button">SHOW ANSWER</button>
         <p data-js="txtAnswer" class="card__hide">
           This is the right answer. Lorem ipsum dolor sit amet consectetur
           adipisicing elit.
@@ -47,7 +50,10 @@
         </ul>
       </article>
       <article class="card position-relative card__bg mb-20">
-        <button data-js="btnBookmark" class="position-absolute card__bookmark">
+        <button
+          data-js="buttonBookmark"
+          class="position-absolute card__bookmark"
+        >
           <svg
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +75,7 @@
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <button data-js="btnAnswer" class="button">SHOW ANSWER</button>
+        <button data-js="buttonAnswer" class="button">SHOW ANSWER</button>
         <p data-js="txtAnswer" class="card__hide">
           This is the right answer. Lorem ipsum dolor sit amet consectetur
           adipisicing elit.
@@ -82,11 +88,8 @@
         </ul>
       </article>
     </main>
-    <main
-      data-js="bookmarks"
-      class="js-siteElements app-grid__scrollarea hidden"
-    ></main>
-    <main data-js="create" class="js-siteElements app-grid__scrollarea hidden">
+    <main data-page="bookmarks" class="app-grid__scrollarea hidden"></main>
+    <main data-page="create" class="app-grid__scrollarea hidden">
       <form class="create">
         <section>
           <label for="add-question" class="create__headings"
@@ -140,10 +143,7 @@
         <button class="button">SUBMIT</button>
       </form>
     </main>
-    <main
-      data-js="profile"
-      class="js-siteElements app-grid__scrollarea profile hidden"
-    >
+    <main data-page="profile" class="app-grid__scrollarea profile hidden">
       <figure class="profile__centered">
         <img
           src="https://source.unsplash.com/random/200x200/?person"
@@ -175,16 +175,16 @@
       <button class="button">LOGOUT</button>
     </main>
     <nav class="nav__grid nav__bg">
-      <button data-js="btnHome" class="nav__bg nav__button nav__active">
+      <button data-nav="home" class="nav__bg nav__button nav__active">
         <img src="./images/house-fill.svg" alt="home" class="nav__img" />
       </button>
-      <button data-js="btnBookmarks" class="nav__bg nav__button">
+      <button data-nav="bookmarks" class="nav__bg nav__button">
         <img src="./images/bookmarks.svg" alt="bookmarks" class="nav__img" />
       </button>
-      <button data-js="btnCreate" class="nav__bg nav__button">
+      <button data-nav="create" class="nav__bg nav__button">
         <img src="./images/pencil-fill.svg" alt="create" class="nav__img" />
       </button>
-      <button data-js="btnProfile" class="nav__bg nav__button">
+      <button data-nav="profile" class="nav__bg nav__button">
         <img src="./images/person-fill.svg" alt="profile" class="nav__img" />
       </button>
     </nav>
