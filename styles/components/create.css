@@ -9,3 +9,8 @@
 .create__inline {
   display: inline;
 }
+
+.create__counter {
+  color: var(--color-counter);
+  text-align: end;
+}

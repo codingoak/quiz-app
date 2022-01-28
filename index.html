@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="myscripts.js"></script>
+    <script type="module" defer src="index.js"></script>
   </head>
   <body class="app-grid h-100vh">
-    <h1 class="app-grid__header bg-header">QUIZ-APP</h1>
-    <main class="app-grid__scrollarea bg-main">
+    <h1 class="app-grid__header">QUIZ-APP</h1>
+    <main data-page="home" class="app-grid__scrollarea">
       <article class="card position-relative card__bg mb-20">
-        <button data-js="btnBookmark" class="position-absolute card__bookmark">
+        <button
+          data-js="buttonBookmark"
+          class="position-absolute card__bookmark"
+        >
           <svg
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,20 +37,23 @@
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <button data-js="btnAnswer" class="button">SHOW ANSWER</button>
+        <button data-js="buttonAnswer" class="button">SHOW ANSWER</button>
         <p data-js="txtAnswer" class="card__hide">
           This is the right answer. Lorem ipsum dolor sit amet consectetur
           adipisicing elit.
         </p>
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly mt-20">
-          <li class="p__tag m-auto">HTML5</li>
-          <li class="p__tag m-auto">CSS3</li>
-          <li class="p__tag m-auto">Git</li>
-          <li class="p__tag m-auto">Advanced</li>
+          <li class="card__tag m-auto">HTML5</li>
+          <li class="card__tag m-auto">CSS3</li>
+          <li class="card__tag m-auto">Git</li>
+          <li class="card__tag m-auto">Advanced</li>
         </ul>
       </article>
       <article class="card position-relative card__bg mb-20">
-        <button data-js="btnBookmark" class="position-absolute card__bookmark">
+        <button
+          data-js="buttonBookmark"
+          class="position-absolute card__bookmark"
+        >
           <svg
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,30 +75,116 @@
           nostrum iste sit quam ullam! Commodi repellendus accusamus sit dolorem
           labore magnam.
         </p>
-        <button data-js="btnAnswer" class="button">SHOW ANSWER</button>
+        <button data-js="buttonAnswer" class="button">SHOW ANSWER</button>
         <p data-js="txtAnswer" class="card__hide">
           This is the right answer. Lorem ipsum dolor sit amet consectetur
           adipisicing elit.
         </p>
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly mt-20">
-          <li class="p__tag m-auto">HTML5</li>
-          <li class="p__tag m-auto">CSS3</li>
-          <li class="p__tag m-auto">Git</li>
-          <li class="p__tag m-auto">Pro</li>
+          <li class="card__tag m-auto">HTML5</li>
+          <li class="card__tag m-auto">CSS3</li>
+          <li class="card__tag m-auto">Git</li>
+          <li class="card__tag m-auto">Pro</li>
         </ul>
       </article>
     </main>
+    <main data-page="bookmarks" class="app-grid__scrollarea hidden"></main>
+    <main data-page="create" class="app-grid__scrollarea hidden">
+      <form class="create">
+        <section>
+          <label for="add-question" class="create__headings"
+            >Add a question:</label
+          >
+          <textarea
+            data-js="textareaQuestion"
+            name="add-question"
+            id="add-question"
+            cols="10"
+            rows="6"
+            maxlength="200"
+            placeholder="Enter your question..."
+            required
+          ></textarea>
+          <output
+            data-js="counterOutputQuestion"
+            class="create__counter"
+          ></output>
+        </section>
+        <section>
+          <label for="add-answer" class="create__headings"
+            >Add an answer:</label
+          >
+          <textarea
+            data-js="textareaAnswer"
+            name="add-answer"
+            id="add-answer"
+            cols="10"
+            rows="6"
+            placeholder="Enter your answer..."
+            required
+          ></textarea>
+          <output
+            data-js="counterOutputAnswer"
+            class="create__counter"
+          ></output>
+        </section>
+        <section>
+          <label for="add-tags" class="create__headings">Add tags:</label>
+          <textarea
+            class="mb-20"
+            name="add-tags"
+            id="add-tags"
+            cols="5"
+            rows="3"
+            placeholder="Enter your tags divided by comma..."
+            required
+          ></textarea>
+        </section>
+        <button class="button">SUBMIT</button>
+      </form>
+    </main>
+    <main data-page="profile" class="app-grid__scrollarea profile hidden">
+      <figure class="profile__centered">
+        <img
+          src="https://source.unsplash.com/random/200x200/?person"
+          alt="profile-foto"
+          width="100"
+          height="100"
+          class="profile__img"
+        />
+        <figcaption>Hans Muster</figcaption>
+      </figure>
+      <section>
+        <h2 class="profile__centered">About me:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          labore laborum dolor modi veniam dolorem, accusamus temporibus rerum
+          quisquam facere voluptatum nisi, officiis officia provident molestiae
+          quaerat. Inventore, placeat iusto?
+        </p>
+      </section>
+      <section>
+        <h2 class="profile__centered">Skills</h2>
+        <ul role="list" class="flex justify-evenly gap-5">
+          <li class="profile__tag m-auto">Tag1</li>
+          <li class="profile__tag m-auto">Tag2</li>
+          <li class="profile__tag m-auto">Tag3</li>
+          <li class="profile__tag m-auto">Tag4</li>
+        </ul>
+      </section>
+      <button class="button">LOGOUT</button>
+    </main>
     <nav class="nav__grid nav__bg">
-      <button data-js="home" class="nav__bg nav__button nav__active">
+      <button data-nav="home" class="nav__bg nav__button nav__active">
         <img src="./images/house-fill.svg" alt="home" class="nav__img" />
       </button>
-      <button data-js="bookmarks" class="nav__bg nav__button">
+      <button data-nav="bookmarks" class="nav__bg nav__button">
         <img src="./images/bookmarks.svg" alt="bookmarks" class="nav__img" />
       </button>
-      <button data-js="create" class="nav__bg nav__button">
+      <button data-nav="create" class="nav__bg nav__button">
         <img src="./images/pencil-fill.svg" alt="create" class="nav__img" />
       </button>
-      <button data-js="profile" class="nav__bg nav__button">
+      <button data-nav="profile" class="nav__bg nav__button">
         <img src="./images/person-fill.svg" alt="profile" class="nav__img" />
       </button>
     </nav>

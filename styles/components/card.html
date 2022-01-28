@@ -1,6 +1,6 @@
-<main class="app-grid__scrollarea">
-  <article class="card position-relative card__bg">
-    <button data-js="btnBookmark" class="position-absolute card__bookmark">
+<main data-page="home" class="app-grid__scrollarea bg-main">
+  <article class="card position-relative card__bg mb-20">
+    <button data-js="buttonBookmark" class="position-absolute card__bookmark">
       <svg
         data-js="imgBookmark"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,19 +22,16 @@
       iste sit quam ullam! Commodi repellendus accusamus sit dolorem labore
       magnam.
     </p>
-    <button data-js="btnAnswer" class="button">
-      <span data-js="txtShow">SHOW ANSWER</span>
-      <span data-js="txtHide" class="card__hide">HIDE ANSWER</span>
-    </button>
-    <p data-js="txtAnswer" class="card__hide mb-20">
+    <button data-js="buttonAnswer" class="button">SHOW ANSWER</button>
+    <p data-js="txtAnswer" class="card__hide">
       This is the right answer. Lorem ipsum dolor sit amet consectetur
       adipisicing elit.
     </p>
-    <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
-      <li class="p__tag m-auto">HTML5</li>
-      <li class="p__tag m-auto">CSS3</li>
-      <li class="p__tag m-auto">Git</li>
-      <li class="p__tag m-auto">Advanced</li>
+    <ul role="list" class="flex flex-wrap gap-5 justify-evenly mt-20">
+      <li class="card__tag m-auto">HTML5</li>
+      <li class="card__tag m-auto">CSS3</li>
+      <li class="card__tag m-auto">Git</li>
+      <li class="card__tag m-auto">Advanced</li>
     </ul>
   </article>
 </main>
