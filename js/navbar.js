@@ -19,7 +19,6 @@ export function navbar() {
     removeActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonCreate, pageCreate);
     removeActiveSite(buttonProfile, pageProfile);
-
     heading.innerHTML = 'QUIZ-APP | Home';
   });
 
@@ -58,7 +57,6 @@ export function navbar() {
   function removeActiveSite(buttonSelector, siteSelector) {
     buttonSelector.classList.remove('nav__active');
     siteSelector.classList.add('hidden');
-
     pageStart.classList.add('hidden');
   }
 }
