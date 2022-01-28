@@ -9,9 +9,9 @@
     <script type="module" defer src="index.js"></script>
   </head>
   <body class="app-grid h-100vh">
-    <h1 class="app-grid__header">QUIZ-APP</h1>
+    <h1 data-js="headingMain" class="app-grid__header">WELCOME TO QUIZ-APP</h1>
     <main data-page="home" class="app-grid__scrollarea">
-      <article class="card position-relative card__bg mb-20">
+      <article data-js="card" class="card position-relative card__bg mb-20">
         <button
           data-js="buttonBookmark"
           class="position-absolute card__bookmark"
@@ -49,7 +49,7 @@
           <li class="card__tag m-auto">Advanced</li>
         </ul>
       </article>
-      <article class="card position-relative card__bg mb-20">
+      <article data-js="card" class="card position-relative card__bg mb-20">
         <button
           data-js="buttonBookmark"
           class="position-absolute card__bookmark"
@@ -88,8 +88,8 @@
         </ul>
       </article>
     </main>
-    <main data-page="bookmarks" class="app-grid__scrollarea hidden"></main>
-    <main data-page="create" class="app-grid__scrollarea hidden">
+    <main data-page="bookmarks" class="hidden app-grid__scrollarea"></main>
+    <main data-page="create" class="hidden app-grid__scrollarea">
       <form class="create">
         <section>
           <label for="add-question" class="create__headings"
@@ -143,36 +143,38 @@
         <button class="button">SUBMIT</button>
       </form>
     </main>
-    <main data-page="profile" class="app-grid__scrollarea profile hidden">
-      <figure class="profile__centered">
-        <img
-          src="https://source.unsplash.com/random/200x200/?person"
-          alt="profile-foto"
-          width="100"
-          height="100"
-          class="profile__img"
-        />
-        <figcaption>Hans Muster</figcaption>
-      </figure>
-      <section>
-        <h2 class="profile__centered">About me:</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          labore laborum dolor modi veniam dolorem, accusamus temporibus rerum
-          quisquam facere voluptatum nisi, officiis officia provident molestiae
-          quaerat. Inventore, placeat iusto?
-        </p>
+    <main data-page="profile" class="hidden app-grid__scrollarea">
+      <section class="profile">
+        <figure class="profile__centered">
+          <img
+            src="https://source.unsplash.com/random/200x200/?person"
+            alt="profile-foto"
+            width="100"
+            height="100"
+            class="profile__img"
+          />
+          <figcaption>Hans Muster</figcaption>
+        </figure>
+        <section>
+          <h2 class="profile__centered">About me:</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            labore laborum dolor modi veniam dolorem, accusamus temporibus rerum
+            quisquam facere voluptatum nisi, officiis officia provident
+            molestiae quaerat. Inventore, placeat iusto?
+          </p>
+        </section>
+        <section>
+          <h2 class="profile__centered">Skills</h2>
+          <ul role="list" class="flex justify-evenly gap-5">
+            <li class="profile__tag m-auto">Tag1</li>
+            <li class="profile__tag m-auto">Tag2</li>
+            <li class="profile__tag m-auto">Tag3</li>
+            <li class="profile__tag m-auto">Tag4</li>
+          </ul>
+        </section>
+        <button class="button">LOGOUT</button>
       </section>
-      <section>
-        <h2 class="profile__centered">Skills</h2>
-        <ul role="list" class="flex justify-evenly gap-5">
-          <li class="profile__tag m-auto">Tag1</li>
-          <li class="profile__tag m-auto">Tag2</li>
-          <li class="profile__tag m-auto">Tag3</li>
-          <li class="profile__tag m-auto">Tag4</li>
-        </ul>
-      </section>
-      <button class="button">LOGOUT</button>
     </main>
     <nav class="nav__grid nav__bg">
       <button data-nav="home" class="nav__bg nav__button nav__active">

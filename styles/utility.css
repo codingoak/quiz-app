@@ -54,16 +54,6 @@
   position: absolute;
 }
 
-.button {
-  cursor: pointer;
-  padding: 5px 10px;
-  height: 2rem;
-  border: 1px solid transparent;
-  border-radius: 2rem;
-  background-color: var(--color-button);
-  color: var(--color-card);
-}
-
 .hidden {
   display: none;
 }

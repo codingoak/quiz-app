@@ -1,9 +1,13 @@
-import { answer } from './js/answer.js';
-import { bookmark } from './js/bookmark.js';
+import Card from './js/Card.js';
+
 import { counter } from './js/counter.js';
 import { navbar } from './js/navbar.js';
 
-bookmark();
-answer();
 counter();
 navbar();
+
+const allCardElements = document.querySelectorAll('[data-js="card"]');
+
+allCardElements.forEach(cardElement => {
+  Card(cardElement);
+});
