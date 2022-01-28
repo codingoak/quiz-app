@@ -1,11 +1,13 @@
 export default function Card(cardElement) {
   // Bookmark
-  const buttonBookmark = cardElement.querySelector('[data-js="buttonBookmark"]');
+  const buttonBookmark = cardElement.querySelector(
+    '[data-js="buttonBookmark"]'
+  );
   const imgBookmark = cardElement.querySelector('[data-js="imgBookmark"]');
 
   buttonBookmark.addEventListener('click', () => {
     imgBookmark.classList.toggle('card__bookmark--filled');
-  })
+  });
 
   // Answer button
   const buttonAnswer = cardElement.querySelector('[data-js="buttonAnswer"]');
