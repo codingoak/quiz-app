@@ -1,11 +1,11 @@
 export function navbar() {
   const heading = document.querySelector('[data-js="headingMain"]');
-  // const buttons
+  // buttons
   const buttonHome = document.querySelector('[data-nav="home"]');
   const buttonBookmarks = document.querySelector('[data-nav="bookmarks"]');
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfile = document.querySelector('[data-nav="profile"]');
-  // const sites
+  // pages
   const pageStart = document.querySelector('[data-page="start"]');
   const pageHome = document.querySelector('[data-page="home"]');
   const pageBookmarks = document.querySelector('[data-page="bookmarks"]');
