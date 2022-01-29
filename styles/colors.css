@@ -64,6 +64,10 @@
     stroke: var(--color-bright) !important;
   }
 
+  .card {
+    border: 0.5px solid var(--color-grey) !important;
+  }
+
   .card__tag {
     border: 0.5px solid var(--color-bright) !important;
   }
@@ -78,6 +82,12 @@
   }
 
   .nav__button {
+    border: 0.5px solid var(--color-grey) !important;
+    border-bottom: var(--color-darker) !important;
+  }
+
+  .nav__bottom {
+    background-color: var(--color-darker) !important;
     border: 0.5px solid var(--color-grey) !important;
   }
 }
