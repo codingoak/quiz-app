@@ -17,34 +17,28 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-main: #333333 !important; /* done */
+    --color-button: #0d3b66 !important;
+    --color-header: #1e1e1e !important; /* done */
+    --color-navbar: #1e1e1e !important; /* done */
+    --color-card-tag: #333333 !important; /* done */
+    --color-card: #1e1e1e !important; /* done */
+    --color-counter: #969696 !important;
+    --color-dark: #001219 !important;
+  }
   body {
-    background-color: var(--color-dark) !important;
-    color: var(--color-brighter) !important;
+    background-color: var(--color-dark);
+    color: var(--color-brighter);
   }
   h1,
   h2,
   h3 {
-    color: var(--color-brighter) !important;
-  }
-  img {
-    filter: grayscale(20%) !important;
+    color: var(--color-brighter);
   }
 
   p {
-    color: var(--color-bright) !important;
-  }
-
-  .app-grid__header {
-    border-bottom: 0.5px solid var(--color-grey) !important;
-    background-color: var(--color-darker) !important;
-  }
-
-  .app-grid__scrollarea {
-    background-color: var(--color-dark) !important;
-  }
-
-  .nav__bg {
-    background-color: var(--color-darker) !important;
+    color: var(--color-bright);
   }
 
   textarea {
@@ -52,13 +46,13 @@
     background-color: var(--color-darker) !important;
   }
 
+  .app-grid__header {
+    border-bottom: 0.5px solid var(--color-grey) !important;
+  }
+
   .button {
     border: 0.5px solid var(--color-bright) !important;
     color: var(--color-bright) !important;
-  }
-
-  .card__bg {
-    background-color: var(--color-darker) !important;
   }
 
   .svgBookmark {
@@ -72,7 +66,11 @@
 
   .card__tag {
     border: 0.5px solid var(--color-bright) !important;
-    background-color: var(--color-dark) !important;
+  }
+
+  .profile__tag {
+    border: 0.5px solid var(--color-bright) !important;
+    background-color: var(--color-darker) !important;
   }
 
   .nav__img {
@@ -81,10 +79,5 @@
 
   .nav__button {
     border: 0.5px solid var(--color-grey) !important;
-  }
-
-  .profile__tag {
-    border: 0.5px solid var(--color-bright) !important;
-    background-color: var(--color-darker) !important;
   }
 }

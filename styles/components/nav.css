@@ -2,15 +2,13 @@
   display: grid;
   grid-template-columns: repeat(4, 25%);
   height: 48px;
-  position: relative;
-  background-color: linear-gradient(transparent, var(--color-navbar));
+  background-image: linear-gradient(var(--color-main), var(--color-navbar) 80%);
 }
 
 .nav__button {
   display: grid;
   place-items: center;
-  border: 0.5px solid var(--color-dark);
-  border-bottom: 1px solid var(--color-navbar);
+  border-style: hidden;
   border-radius: 9px 9px 0 0;
   background-color: var(--color-navbar);
 }
@@ -21,15 +19,6 @@
 }
 
 .nav__active {
-  transform: translateY(-10px);
-  transition: all 0.5s ease;
+  transform: translateY(-12px);
+  transition: all 0.1 ease;
 }
-
-/* .nav__bottom {
-  width: 100vw;
-  height: 30px;
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-  background-color: var(--color-navbar);
-} */
