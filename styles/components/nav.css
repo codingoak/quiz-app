@@ -1,23 +1,18 @@
 .nav__grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  border-top: 1px solid var(--color-dark);
   height: 48px;
-}
-
-.nav__bg {
-  background-color: var(--color-navbar);
+  background-image: linear-gradient(var(--color-main), var(--color-navbar));
 }
 
 .nav__button {
   display: grid;
   place-items: center;
   border: 0.5px solid var(--color-dark);
+  border-bottom: 0.5px solid var(--color-navbar);
+  border-radius: 9px 9px 0 0;
   background-color: var(--color-navbar);
-}
-
-.nav__border-right {
-  border-right: 1px solid var(--color-dark);
+  z-index: 2;
 }
 
 .nav__img {
@@ -26,5 +21,27 @@
 }
 
 .nav__active {
-  opacity: 0.5;
+  transform: translateY(-12px);
+  transition: all 0.1s ease;
+}
+
+.nav__bottom {
+  position: absolute;
+  bottom: 0;
+  width: 25vw;
+  height: 48px;
+  background-color: var(--color-navbar);
+  z-index: 1;
+  border: 0.5px solid var(--color-dark);
+  border-radius: 9px 9px 0 0;
+}
+
+.nav__bottom-two {
+  left: 25vw;
+}
+.nav__bottom-three {
+  left: 50vw;
+}
+.nav__bottom-four {
+  left: 75vw;
 }

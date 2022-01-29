@@ -1,12 +1,12 @@
 export function navbar() {
-  /******* still under construction ********/
-
-  // const buttons
+  const heading = document.querySelector('[data-js="headingMain"]');
+  // buttons
   const buttonHome = document.querySelector('[data-nav="home"]');
   const buttonBookmarks = document.querySelector('[data-nav="bookmarks"]');
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfile = document.querySelector('[data-nav="profile"]');
-  // const sites
+  // pages
+  const pageStart = document.querySelector('[data-page="start"]');
   const pageHome = document.querySelector('[data-page="home"]');
   const pageBookmarks = document.querySelector('[data-page="bookmarks"]');
   const pageCreate = document.querySelector('[data-page="create"]');
@@ -18,20 +18,25 @@ export function navbar() {
     removeActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonCreate, pageCreate);
     removeActiveSite(buttonProfile, pageProfile);
+    heading.innerHTML = 'QUIZ-APP | Home';
   });
+
   // Activate bookmarks icon and show content
   buttonBookmarks.addEventListener('click', () => {
     setActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonCreate, pageCreate);
     removeActiveSite(buttonProfile, pageProfile);
     removeActiveSite(buttonHome, pageHome);
+    heading.innerHTML = 'QUIZ-APP | Bookmarks';
   });
+
   // Activate create icon and show content
   buttonCreate.addEventListener('click', () => {
     setActiveSite(buttonCreate, pageCreate);
     removeActiveSite(buttonHome, pageHome);
     removeActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonProfile, pageProfile);
+    heading.innerHTML = 'QUIZ-APP | Create';
   });
   // Activate profile icon and show content
   buttonProfile.addEventListener('click', () => {
@@ -39,6 +44,7 @@ export function navbar() {
     removeActiveSite(buttonHome, pageHome);
     removeActiveSite(buttonBookmarks, pageBookmarks);
     removeActiveSite(buttonCreate, pageCreate);
+    heading.innerHTML = 'QUIZ-APP | Profile';
   });
 
   // enable icon and site
@@ -50,16 +56,6 @@ export function navbar() {
   function removeActiveSite(buttonSelector, siteSelector) {
     buttonSelector.classList.remove('nav__active');
     siteSelector.classList.add('hidden');
+    pageStart.classList.add('hidden');
   }
-
-  // const siteElements = document.querySelectorAll('.js-siteElements');
-  // console.log(siteElements);
-
-  // for (let i = 0; i < siteElements.length; i++) {
-  //   console.log(siteElements[i]);
-  //   console.log(siteElements.classList)
-  //   if (siteElements.classList.hasOwnProperty('hidden')) {
-  //     console.log('it contains hidden')
-  //   }
-  // }
 }

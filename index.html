@@ -9,14 +9,26 @@
     <script type="module" defer src="index.js"></script>
   </head>
   <body class="app-grid h-100vh">
-    <h1 class="app-grid__header">QUIZ-APP</h1>
-    <main data-page="home" class="app-grid__scrollarea">
-      <article class="card position-relative card__bg mb-20">
+    <h1 data-js="headingMain" class="app-grid__header">WELCOME TO QUIZ-APP</h1>
+    <!-- ************* WELCOME PAGE ************* -->
+    <main data-page="start" class="app-grid__scrollarea">
+      <figure class="m-20">
+        <q
+          >Live as if you were to die tomorrow. Learn as if you were to live
+          forever.</q
+        >
+        <figcaption class="mt-10">― Mahatma Gandhi</figcaption>
+      </figure>
+    </main>
+    <!-- ************* HOME PAGE ************* -->
+    <main data-page="home" class="hidden app-grid__scrollarea">
+      <article data-js="card" class="card position-relative card__bg mb-20">
         <button
           data-js="buttonBookmark"
           class="position-absolute card__bookmark"
         >
           <svg
+            class="svgBookmark"
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -49,12 +61,13 @@
           <li class="card__tag m-auto">Advanced</li>
         </ul>
       </article>
-      <article class="card position-relative card__bg mb-20">
+      <article data-js="card" class="card position-relative card__bg mb-20">
         <button
           data-js="buttonBookmark"
           class="position-absolute card__bookmark"
         >
           <svg
+            class="svgBookmark"
             data-js="imgBookmark"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -88,8 +101,10 @@
         </ul>
       </article>
     </main>
-    <main data-page="bookmarks" class="app-grid__scrollarea hidden"></main>
-    <main data-page="create" class="app-grid__scrollarea hidden">
+    <!-- ************* BOOKMARKS PAGE ************* -->
+    <main data-page="bookmarks" class="hidden app-grid__scrollarea"></main>
+    <!-- ************* CREATE PAGE ************* -->
+    <main data-page="create" class="hidden app-grid__scrollarea">
       <form class="create">
         <section>
           <label for="add-question" class="create__headings"
@@ -99,16 +114,15 @@
             data-js="textareaQuestion"
             name="add-question"
             id="add-question"
-            cols="10"
-            rows="6"
+            cols="9"
+            rows="7"
             maxlength="200"
             placeholder="Enter your question..."
             required
           ></textarea>
-          <output
-            data-js="counterOutputQuestion"
-            class="create__counter"
-          ></output>
+          <output data-js="counterOutputQuestion" class="create__counter"
+            >200 characters remaining</output
+          >
         </section>
         <section>
           <label for="add-answer" class="create__headings"
@@ -118,75 +132,145 @@
             data-js="textareaAnswer"
             name="add-answer"
             id="add-answer"
-            cols="10"
-            rows="6"
+            cols="9"
+            rows="7"
+            maxlength="200"
             placeholder="Enter your answer..."
             required
           ></textarea>
-          <output
-            data-js="counterOutputAnswer"
-            class="create__counter"
-          ></output>
+          <output data-js="counterOutputAnswer" class="create__counter"
+            >200 characters remaining</output
+          >
         </section>
         <section>
           <label for="add-tags" class="create__headings">Add tags:</label>
           <textarea
-            class="mb-20"
+            data-js="textareaTags"
             name="add-tags"
             id="add-tags"
             cols="5"
             rows="3"
-            placeholder="Enter your tags divided by comma..."
+            maxlength="100"
+            placeholder="Enter your tags spanided by comma..."
             required
           ></textarea>
+          <output data-js="counterOutputTags" class="create__counter"
+            >100 characters remaining</output
+          >
         </section>
-        <button class="button">SUBMIT</button>
+        <button class="button mt-20">SUBMIT</button>
       </form>
     </main>
-    <main data-page="profile" class="app-grid__scrollarea profile hidden">
-      <figure class="profile__centered">
-        <img
-          src="https://source.unsplash.com/random/200x200/?person"
-          alt="profile-foto"
-          width="100"
-          height="100"
-          class="profile__img"
-        />
-        <figcaption>Hans Muster</figcaption>
-      </figure>
-      <section>
-        <h2 class="profile__centered">About me:</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-          labore laborum dolor modi veniam dolorem, accusamus temporibus rerum
-          quisquam facere voluptatum nisi, officiis officia provident molestiae
-          quaerat. Inventore, placeat iusto?
-        </p>
+    <!-- *********** PROFILE PAGE *********** -->
+    <main data-page="profile" class="hidden app-grid__scrollarea">
+      <section class="profile">
+        <figure class="profile__centered">
+          <img
+            src="https://source.unsplash.com/random/200x200/?person"
+            alt="profile-foto"
+            width="100"
+            height="100"
+            class="profile__img"
+          />
+          <figcaption>Hans Muster</figcaption>
+        </figure>
+        <section>
+          <h2 class="profile__centered">About me:</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+            labore laborum dolor modi veniam dolorem, accusamus temporibus rerum
+            quisquam facere voluptatum nisi, officiis officia provident
+            molestiae quaerat. Inventore, placeat iusto?
+          </p>
+        </section>
+        <section>
+          <h2 class="profile__centered">Skills</h2>
+          <ul role="list" class="flex justify-evenly gap-5">
+            <li class="profile__tag m-auto">Tag1</li>
+            <li class="profile__tag m-auto">Tag2</li>
+            <li class="profile__tag m-auto">Tag3</li>
+            <li class="profile__tag m-auto">Tag4</li>
+          </ul>
+        </section>
+        <button class="button mt-20">LOGOUT</button>
       </section>
-      <section>
-        <h2 class="profile__centered">Skills</h2>
-        <ul role="list" class="flex justify-evenly gap-5">
-          <li class="profile__tag m-auto">Tag1</li>
-          <li class="profile__tag m-auto">Tag2</li>
-          <li class="profile__tag m-auto">Tag3</li>
-          <li class="profile__tag m-auto">Tag4</li>
-        </ul>
-      </section>
-      <button class="button">LOGOUT</button>
     </main>
-    <nav class="nav__grid nav__bg">
-      <button data-nav="home" class="nav__bg nav__button nav__active">
-        <img src="./images/house-fill.svg" alt="home" class="nav__img" />
+    <!-- *********** NAVBAR *********** -->
+    <nav class="nav__grid">
+      <button data-nav="home" class="nav__button">
+        <svg
+          alt="home"
+          class="nav__img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+          />
+        </svg>
       </button>
-      <button data-nav="bookmarks" class="nav__bg nav__button">
-        <img src="./images/bookmarks.svg" alt="bookmarks" class="nav__img" />
+      <button data-nav="bookmarks" class="nav__button">
+        <svg
+          alt="bookmarks"
+          class="nav__img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"
+          />
+          <path
+            d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"
+          />
+        </svg>
       </button>
-      <button data-nav="create" class="nav__bg nav__button">
-        <img src="./images/pencil-fill.svg" alt="create" class="nav__img" />
+      <button data-nav="create" class="nav__button">
+        <svg
+          alt="create"
+          class="nav__img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+          />
+        </svg>
       </button>
-      <button data-nav="profile" class="nav__bg nav__button">
-        <img src="./images/person-fill.svg" alt="profile" class="nav__img" />
+      <button data-nav="profile" class="nav__button">
+        <svg
+          alt="profile"
+          class="nav__img"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path
+            fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+          />
+        </svg>
       </button>
+      <span class="nav__bottom"></span>
+      <span class="nav__bottom nav__bottom-two"></span>
+      <span class="nav__bottom nav__bottom-three"></span>
+      <span class="nav__bottom nav__bottom-four"></span>
     </nav>
   </body>
 </html>

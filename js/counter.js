@@ -9,8 +9,14 @@ export function counter() {
 
   textareaQuestion.addEventListener('input', () => {
     const stringLength = textareaQuestion.value.length;
-    counterOutputQuestion.value = 200 - stringLength;
+    const charsRemaining = 200 - stringLength;
+
+    counterOutputQuestion.value =
+      charsRemaining > 1
+        ? `${charsRemaining} characters remaining`
+        : `${charsRemaining} character  remaining`;
   });
+
   // Answer
   const counterOutputAnswer = document.querySelector(
     '[data-js="counterOutputAnswer"]'
@@ -19,6 +25,27 @@ export function counter() {
 
   textareaAnswer.addEventListener('input', () => {
     const stringLength = textareaAnswer.value.length;
-    counterOutputAnswer.value = 200 - stringLength;
+    const charsRemaining = 200 - stringLength;
+
+    counterOutputAnswer.value =
+      charsRemaining > 1
+        ? `${charsRemaining} characters remaining`
+        : `${charsRemaining} character remaining`;
+  });
+
+  // Tags
+  const counterOutputTags = document.querySelector(
+    '[data-js="counterOutputTags"]'
+  );
+  const textareaTags = document.querySelector('[data-js="textareaTags"]');
+
+  textareaTags.addEventListener('input', () => {
+    const stringLength = textareaTags.value.length;
+    const charsRemaining = 100 - stringLength;
+
+    counterOutputTags.value =
+      charsRemaining > 1
+        ? `${charsRemaining} characters remaining`
+        : `${charsRemaining} character remaining`;
   });
 }
