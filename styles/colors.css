@@ -1,4 +1,5 @@
 :root {
+  /* light mode */
   --color-main: #fff1e6;
   --color-button: #0d3b66;
   --color-header: #a5a58d;
@@ -7,4 +8,83 @@
   --color-card: #f0efeb;
   --color-counter: #969696;
   --color-dark: #001219;
+  /* dark mode */
+  --color-brighter: #f4f4f4;
+  --color-bright: #e2e2e2;
+  --color-grey: #555555;
+  --color-dark: #333333;
+  --color-darker: #1e1e1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark) !important;
+    color: var(--color-brighter) !important;
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--color-brighter) !important;
+  }
+  img {
+    filter: grayscale(20%) !important;
+  }
+
+  p {
+    color: var(--color-bright) !important;
+  }
+
+  .app-grid__header {
+    border-bottom: 0.5px solid var(--color-grey) !important;
+    background-color: var(--color-darker) !important;
+  }
+
+  .app-grid__scrollarea {
+    background-color: var(--color-dark) !important;
+  }
+
+  .nav__bg {
+    background-color: var(--color-darker) !important;
+  }
+
+  textarea {
+    color: var(--color-bright) !important;
+    background-color: var(--color-darker) !important;
+  }
+
+  .button {
+    border: 0.5px solid var(--color-bright) !important;
+    color: var(--color-bright) !important;
+  }
+
+  .card__bg {
+    background-color: var(--color-darker) !important;
+  }
+
+  .svgBookmark {
+    fill: var(--color-darker) !important;
+    stroke: var(--color-grey) !important;
+  }
+
+  .card__bookmark--filled {
+    stroke: var(--color-bright) !important;
+  }
+
+  .card__tag {
+    border: 0.5px solid var(--color-bright) !important;
+    background-color: var(--color-dark) !important;
+  }
+
+  .nav__img {
+    color: var(--color-bright) !important;
+  }
+
+  .nav__button {
+    border: 0.5px solid var(--color-grey) !important;
+  }
+
+  .profile__tag {
+    border: 0.5px solid var(--color-bright) !important;
+    background-color: var(--color-darker) !important;
+  }
 }
