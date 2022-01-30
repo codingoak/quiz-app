@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 25%);
   height: 48px;
-  background-image: linear-gradient(var(--color-main), var(--color-navbar));
+  background: linear-gradient(transparent, var(--color-navbar) 60%);
 }
 
 .nav__button {
@@ -10,7 +10,6 @@
   place-items: center;
   border: 0.5px solid var(--color-dark);
   border-bottom: 0.5px solid var(--color-navbar);
-  border-radius: 9px 9px 0 0;
   background-color: var(--color-navbar);
   z-index: 2;
 }
@@ -33,7 +32,6 @@
   background-color: var(--color-navbar);
   z-index: 1;
   border: 0.5px solid var(--color-dark);
-  border-radius: 9px 9px 0 0;
 }
 
 .nav__bottom-two {
