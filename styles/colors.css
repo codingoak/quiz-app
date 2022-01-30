@@ -18,32 +18,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-main: #333333 !important; /* done */
-    --color-button: #0d3b66 !important;
-    --color-header: #1e1e1e !important; /* done */
-    --color-navbar: #1e1e1e !important; /* done */
-    --color-card-tag: #333333 !important; /* done */
-    --color-card: #1e1e1e !important; /* done */
-    --color-counter: #969696 !important;
-    --color-dark: #001219 !important;
+    --color-main: #333333;
+    --color-button: #0d3b66;
+    --color-header: #1e1e1e;
+    --color-navbar: #1e1e1e;
+    --color-card-tag: #333333;
+    --color-card: #1e1e1e;
+    --color-dark: #001219;
   }
   body {
-    background-color: var(--color-dark);
+    background-color: var(--color-main);
     color: var(--color-brighter);
-  }
-  h1,
-  h2,
-  h3 {
-    color: var(--color-brighter);
-  }
-
-  p {
-    color: var(--color-bright);
   }
 
   textarea {
-    color: var(--color-bright) !important;
-    background-color: var(--color-darker) !important;
+    color: var(--color-bright);
+    background-color: var(--color-darker);
     border: 1px solid var(--color-grey) !important;
   }
 
@@ -57,12 +47,12 @@
   }
 
   .svgBookmark {
-    fill: var(--color-darker) !important;
-    stroke: var(--color-grey) !important;
+    fill: var(--color-darker);
+    stroke: var(--color-grey);
   }
 
   .card__bookmark--filled {
-    stroke: var(--color-bright) !important;
+    stroke: var(--color-bright);
   }
 
   .card {
@@ -88,7 +78,8 @@
   }
 
   .nav__bottom {
-    background-color: var(--color-darker) !important;
+    background-color: var(--color-darker);
     border: 0.5px solid var(--color-grey) !important;
+    border-bottom: var(--color-darker) !important;
   }
 }
