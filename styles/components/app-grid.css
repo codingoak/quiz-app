@@ -14,6 +14,12 @@
   background-color: var(--color-main);
 }
 
-.app-grid__pb-65 {
+/* .app-grid__pb-65 {
   padding-bottom: 65px;
+} */
+
+.app-grid__bottom {
+  background-color: var(--color-main);
+  height: 65px;
+  width: 100%;
 }
