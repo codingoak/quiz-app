@@ -1,6 +1,6 @@
 .app-grid {
   display: grid;
-  grid-template-rows: 48px 1fr 48px;
+  grid-template-rows: 48px 1fr;
 }
 
 .app-grid__header {
@@ -12,4 +12,8 @@
   overflow-y: auto;
   padding: 20px;
   background-color: var(--color-main);
+}
+
+.app-grid__pb-65 {
+  padding-bottom: 65px !important;
 }

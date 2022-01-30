@@ -80,5 +80,6 @@
   .nav__bottom {
     background-color: var(--color-darker);
     border: 0.5px solid var(--color-grey) !important;
+    border-bottom: var(--color-darker) !important;
   }
 }
