@@ -845,5 +845,8 @@
     "yaml": "^1.10.2",
     "yocto-queue": "^0.1.0",
     "zwitch": "^1.0.5"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
