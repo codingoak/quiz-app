@@ -47,12 +47,12 @@
   }
 
   .svgBookmark {
-    fill: var(--color-darker);
-    stroke: var(--color-grey);
+    fill: var(--color-darker) !important;
+    stroke: var(--color-grey) !important;
   }
 
   .card__bookmark--filled {
-    stroke: var(--color-bright);
+    stroke: var(--color-bright) !important;
   }
 
   .card {
