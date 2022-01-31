@@ -22,6 +22,10 @@
   margin-bottom: 20px !important;
 }
 
+.mb-40 {
+  margin: 40px !important;
+}
+
 .ml-20 {
   margin-left: 20px;
 }
