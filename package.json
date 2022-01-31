@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run htmlhint && npm run prettier:write",
+    "test": "npm run htmlhint && npm run prettier:check",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
     "prettier:check": "npx prettier --check .",
     "prettier:write": "npx prettier --write .",
-    "htmlhint": "npx htmlhint '**/*.html'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepare": "husky install"
