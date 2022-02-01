@@ -1,5 +1,5 @@
-export function navbar() {
-  const allButtons = document.querySelectorAll('[data-nav]');
+export default function Navbar(navElement) {
+  const allButtons = navElement.querySelectorAll('[data-nav]');
   const allPages = document.querySelectorAll('[data-page]');
 
   allButtons.forEach(button => {

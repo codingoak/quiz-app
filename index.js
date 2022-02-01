@@ -1,13 +1,24 @@
-import Card from './js/Card.js';
+import Card from './components/Card.js';
+import Navbar from './components/Navbar.js';
+import Form from './components/Form.js';
 
-import { counter } from './js/counter.js';
-import { navbar } from './js/navbar.js';
-
-counter();
-navbar();
-
+// Card
 const allCardElements = document.querySelectorAll('[data-js="card"]');
 
 allCardElements.forEach(cardElement => {
   Card(cardElement);
+});
+
+//Navbar
+const allNavElements = document.querySelectorAll('[data-js="nav"]');
+
+allNavElements.forEach(navElement => {
+  Navbar(navElement);
+});
+
+// Form
+const allFormElements = document.querySelectorAll('[data-js="form"]');
+
+allFormElements.forEach(formElement => {
+  Form(formElement);
 });
