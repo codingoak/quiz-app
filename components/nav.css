@@ -10,7 +10,7 @@
   display: grid;
   place-items: center;
   width: 25vw;
-  border: 0.5px solid var(--color-dark);
+  border: 0.5px solid var(--color-border);
   border-bottom: 0.5px solid var(--color-navbar);
   border-radius: 9px 9px 0 0;
   background-color: var(--color-navbar);
@@ -20,6 +20,7 @@
 .nav__img {
   width: 30px;
   height: 30px;
+  color: var(--color-text);
 }
 
 .nav__active {
@@ -34,7 +35,7 @@
   height: 48px;
   background-color: var(--color-navbar);
   z-index: 1;
-  border: 0.5px solid var(--color-dark);
+  border: 0.5px solid var(--color-border);
   border-bottom: 0.5px solid var(--color-navbar);
   border-radius: 9px 9px 0 0;
 }

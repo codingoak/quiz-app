@@ -8,42 +8,29 @@
   --color-card: #f0efeb;
   --color-counter: #969696;
   --color-dark: #001219;
+  --color-border: #001219;
+  --color-text: #001219;
+
   /* dark mode */
-  --color-brighter: #f4f4f4;
   --color-bright: #e2e2e2;
   --color-grey: #555555;
-  --color-dark: #333333;
   --color-darker: #1e1e1e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-main: #333333;
-    --color-button: #0d3b66;
     --color-header: #1e1e1e;
     --color-navbar: #1e1e1e;
     --color-card-tag: #333333;
     --color-card: #1e1e1e;
     --color-dark: #001219;
+    --color-border: #555555;
+    --color-text: #e2e2e2 !important;
   }
+
   body {
-    background-color: var(--color-main);
-    color: var(--color-brighter);
-  }
-
-  textarea {
     color: var(--color-bright);
-    background-color: var(--color-darker);
-    border: 1px solid var(--color-grey) !important;
-  }
-
-  .app-grid__header {
-    border-bottom: 0.5px solid var(--color-grey) !important;
-  }
-
-  .button {
-    border: 0.5px solid var(--color-grey) !important;
-    color: var(--color-bright) !important;
   }
 
   .svgBookmark {
@@ -52,34 +39,6 @@
   }
 
   .card__bookmark--filled {
-    stroke: var(--color-bright) !important;
-  }
-
-  .card {
-    border: 0.5px solid var(--color-grey) !important;
-  }
-
-  .card__tag {
-    border: 0.5px solid var(--color-grey) !important;
-  }
-
-  .profile__tag {
-    border: 0.5px solid var(--color-grey) !important;
-    background-color: var(--color-darker) !important;
-  }
-
-  .nav__img {
-    color: var(--color-bright) !important;
-  }
-
-  .nav__button {
-    border: 0.5px solid var(--color-grey) !important;
-    border-bottom: var(--color-darker) !important;
-  }
-
-  .nav__bottom {
-    background-color: var(--color-darker);
-    border: 0.5px solid var(--color-grey) !important;
-    border-bottom: var(--color-darker) !important;
+    stroke: var(--color-text) !important;
   }
 }
