@@ -1,9 +1,9 @@
 export default function Form(formElement) {
   // Question
-  const counterOutputQuestion = document.querySelector(
+  const counterOutputQuestion = formElement.querySelector(
     '[data-js="counterOutputQuestion"]'
   );
-  const textareaQuestion = document.querySelector(
+  const textareaQuestion = formElement.querySelector(
     '[data-js="textareaQuestion"]'
   );
 
@@ -18,10 +18,12 @@ export default function Form(formElement) {
   });
 
   // Answer
-  const counterOutputAnswer = document.querySelector(
+  const counterOutputAnswer = formElement.querySelector(
     '[data-js="counterOutputAnswer"]'
   );
-  const textareaAnswer = document.querySelector('[data-js="textareaAnswer"]');
+  const textareaAnswer = formElement.querySelector(
+    '[data-js="textareaAnswer"]'
+  );
 
   textareaAnswer.addEventListener('input', () => {
     const stringLength = textareaAnswer.value.length;
@@ -34,10 +36,10 @@ export default function Form(formElement) {
   });
 
   // Tags
-  const counterOutputTags = document.querySelector(
+  const counterOutputTags = formElement.querySelector(
     '[data-js="counterOutputTags"]'
   );
-  const textareaTags = document.querySelector('[data-js="textareaTags"]');
+  const textareaTags = formElement.querySelector('[data-js="textareaTags"]');
 
   textareaTags.addEventListener('input', () => {
     const stringLength = textareaTags.value.length;
