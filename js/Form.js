@@ -1,4 +1,4 @@
-export function counter() {
+export default function Form(formElement) {
   // Question
   const counterOutputQuestion = document.querySelector(
     '[data-js="counterOutputQuestion"]'
