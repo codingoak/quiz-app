@@ -49,9 +49,9 @@
           />
         </svg>
       </button>
-      <button data-nav="create" class="nav__button">
+      <button data-nav="form" class="nav__button">
         <svg
-          alt="create"
+          alt="form"
           class="nav__img"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -191,15 +191,12 @@
       class="hidden app-grid__scrollarea app-grid__pb-65"
     ></main>
     <!-- ************* CREATE PAGE ************* -->
-    <main
-      data-page="create"
-      class="hidden app-grid__scrollarea app-grid__pb-65"
-    >
-      <form data-js="form" class="create">
+    <main data-page="form" class="hidden app-grid__scrollarea app-grid__pb-65">
+      <form data-js="form" class="form">
         <section>
-          <div class="create__headings">
+          <div class="form__headings">
             <label for="add-question">Add a question:</label>
-            <output data-js="counterOutputQuestion" class="create__counter"
+            <output data-js="counterOutputQuestion" class="form__counter"
               >200 chars remaining</output
             >
           </div>
@@ -216,9 +213,9 @@
           ></textarea>
         </section>
         <section>
-          <div class="create__headings">
+          <div class="form__headings">
             <label for="add-answer">Add an answer:</label>
-            <output data-js="counterOutputAnswer" class="create__counter"
+            <output data-js="counterOutputAnswer" class="form__counter"
               >200 chars remaining</output
             >
           </div>
@@ -235,9 +232,9 @@
           ></textarea>
         </section>
         <section>
-          <div class="create__headings">
+          <div class="form__headings">
             <label for="add-tags">Add tags:</label>
-            <output data-js="counterOutputTags" class="create__counter"
+            <output data-js="counterOutputTags" class="form__counter"
               >100 chars remaining</output
             >
           </div>

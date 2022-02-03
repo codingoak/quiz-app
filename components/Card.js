@@ -24,12 +24,12 @@ export default function Card(cardElement) {
   // Random spanish word from API
   fetch('https://palabras-aleatorias-public-api.herokuapp.com/random')
     .then(response => response.json())
-    .then(data => createList(data.body))
+    .then(data => formList(data.body))
     .catch(error => console.error(error));
 
-  function createList(words) {
+  function formList(words) {
     console.log(words.Word);
-    const randomWord = document.createElement('div');
+    const randomWord = document.formElement('div');
     randomWord.textContent = words.Word;
     document.body.append(randomWord);
   }

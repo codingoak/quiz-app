@@ -1,18 +1,18 @@
-.create {
+.form {
   display: grid;
 }
 
-.create__headings {
+.form__headings {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.create__inline {
+.form__inline {
   display: inline;
 }
 
-.create__counter {
+.form__counter {
   color: var(--color-counter);
 }
 
