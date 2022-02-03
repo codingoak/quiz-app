@@ -1,6 +1,6 @@
 .card {
   padding: 30px;
-  border: 0.5px inset var(--color-dark);
+  border: 0.5px solid var(--color-border);
   border-radius: 5px;
   position: relative;
   display: grid;
@@ -22,7 +22,7 @@
 }
 
 .card__bookmark--filled {
-  fill: var(--color-dark);
+  fill: var(--color-text);
 }
 
 .card__hide {
@@ -32,6 +32,7 @@
 .card__tag {
   padding: 5px 10px;
   border-radius: 3px;
+  border: 0.5px solid var(--color-border);
   background-color: var(--color-card-tag);
   font-size: small;
 }
