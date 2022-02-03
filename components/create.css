@@ -4,6 +4,8 @@
 
 .create__headings {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .create__inline {
@@ -12,7 +14,6 @@
 
 .create__counter {
   color: var(--color-counter);
-  text-align: end;
 }
 
 .card__input {
