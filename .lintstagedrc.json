@@ -1,4 +1,4 @@
 {
-  "*.{js,jsx,ts,tsx,md,css}": "prettier --write",
-  "*.html": ["htmlhint", "prettier --write"]
+  "*": "prettier --ignore-unknown --write",
+  "*.html": ["htmlhint"]
 }
