@@ -13,8 +13,8 @@ export default function Form(formElement) {
 
     counterOutputQuestion.value =
       charsRemaining > 1
-        ? `${charsRemaining} characters remaining`
-        : `${charsRemaining} character  remaining`;
+        ? `${charsRemaining} chars remaining`
+        : `${charsRemaining} char  remaining`;
   });
 
   // Answer
@@ -31,9 +31,11 @@ export default function Form(formElement) {
 
     counterOutputAnswer.value =
       charsRemaining > 1
-        ? `${charsRemaining} characters remaining`
-        : `${charsRemaining} character remaining`;
+        ? `${charsRemaining} chars remaining`
+        : `${charsRemaining} char remaining`;
   });
+
+  console.log(counterOutputAnswer.value);
 
   // Tags
   const counterOutputTags = formElement.querySelector(
@@ -47,7 +49,7 @@ export default function Form(formElement) {
 
     counterOutputTags.value =
       charsRemaining > 1
-        ? `${charsRemaining} characters remaining`
-        : `${charsRemaining} character remaining`;
+        ? `${charsRemaining} chars remaining`
+        : `${charsRemaining} char remaining`;
   });
 }

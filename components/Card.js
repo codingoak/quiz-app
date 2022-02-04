@@ -20,4 +20,17 @@ export default function Card(cardElement) {
         : 'SHOW ANSWER';
     txtAnswer.classList.toggle('card__hide');
   });
+
+  // Random spanish word from API
+  fetch('https://palabras-aleatorias-public-api.herokuapp.com/random')
+    .then(response => response.json())
+    .then(data => formList(data.body))
+    .catch(error => console.error(error));
+
+  function formList(words) {
+    console.log(words.Word);
+    const randomWord = document.formElement('div');
+    randomWord.textContent = words.Word;
+    document.body.append(randomWord);
+  }
 }

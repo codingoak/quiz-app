@@ -49,9 +49,9 @@
           />
         </svg>
       </button>
-      <button data-nav="create" class="nav__button">
+      <button data-nav="form" class="nav__button">
         <svg
-          alt="create"
+          alt="form"
           class="nav__img"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -191,15 +191,15 @@
       class="hidden app-grid__scrollarea app-grid__pb-65"
     ></main>
     <!-- ************* CREATE PAGE ************* -->
-    <main
-      data-page="create"
-      class="hidden app-grid__scrollarea app-grid__pb-65"
-    >
-      <form data-js="form" class="create">
+    <main data-page="form" class="hidden app-grid__scrollarea app-grid__pb-65">
+      <form data-js="form" class="form">
         <section>
-          <label for="add-question" class="create__headings"
-            >Add a question:</label
-          >
+          <div class="form__headings">
+            <label for="add-question">Add a question:</label>
+            <output data-js="counterOutputQuestion" class="form__counter"
+              >200 chars remaining</output
+            >
+          </div>
           <textarea
             class="card__input"
             data-js="textareaQuestion"
@@ -211,14 +211,14 @@
             placeholder="Enter your question..."
             required
           ></textarea>
-          <output data-js="counterOutputQuestion" class="create__counter"
-            >200 characters remaining</output
-          >
         </section>
         <section>
-          <label for="add-answer" class="create__headings"
-            >Add an answer:</label
-          >
+          <div class="form__headings">
+            <label for="add-answer">Add an answer:</label>
+            <output data-js="counterOutputAnswer" class="form__counter"
+              >200 chars remaining</output
+            >
+          </div>
           <textarea
             class="card__input"
             data-js="textareaAnswer"
@@ -230,12 +230,14 @@
             placeholder="Enter your answer..."
             required
           ></textarea>
-          <output data-js="counterOutputAnswer" class="create__counter"
-            >200 characters remaining</output
-          >
         </section>
         <section>
-          <label for="add-tags" class="create__headings">Add tags:</label>
+          <div class="form__headings">
+            <label for="add-tags">Add tags:</label>
+            <output data-js="counterOutputTags" class="form__counter"
+              >100 chars remaining</output
+            >
+          </div>
           <textarea
             class="card__input"
             data-js="textareaTags"
@@ -247,9 +249,6 @@
             placeholder="Enter your tags spanided by comma..."
             required
           ></textarea>
-          <output data-js="counterOutputTags" class="create__counter"
-            >100 characters remaining</output
-          >
         </section>
         <button class="button mt-20">SUBMIT</button>
       </form>
